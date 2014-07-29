@@ -104,6 +104,7 @@ Beam used for alignment
 %x\propto\eta_x$} (3.7,3.75);
 \end{tikzpicture}
 }
+
 \headerbox{Streak Camera}{name=firstbox,below=introbox,column=0,row=1,span=2,above=bottom}
 {
 {\color{hzbblue}\bf\large Setup} \\[0.5cm]
@@ -123,31 +124,40 @@ support beam
 };
 \node at (-1,-5) {
 \begin{varwidth}{7cm}
-\color{hzbblue} \textbullet \color{black} The toroidal mirrors, along with a splitter and a normal mirror, on the optical table are placed on rail systems in order to provide multiple degrees of freedom to adjust for the horizontal and vertical focal lengths of the beam
+The toroidal mirrors, along with a splitter and a normal mirror, on the optical table are placed on rail systems in order to provide multiple degrees of freedom to adjust for the horizontal and vertical focuses of the beam
 \end{varwidth}
 };
 \end{tikzpicture}
 
 
-{\color{hzbblue}\bf\large Testing} \\[0.5cm]
+{\color{hzbblue}\bf\large Measurements} \\[0.5cm]
 \begin{tikzpicture}[]
 
-\node at (1,0) {\includegraphics[height=100pt]{IP/analog10sx50_backgroundsubstracted.pdf}
+\node at (0,3.3) {\fbox{\includegraphics[height=100pt]{IP/analog10sx50_backgroundsubstractedcrop.pdf}}
 };
-\node at (6,0) {\includegraphics[height=100pt]{IP/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf}
+\node at (5.5,2) {\fbox{\includegraphics[height=100pt]{IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf}}
 };
-\node at (12,0) {\includegraphics[height=100pt]{IP/lowalpha_1uA.pdf}
+\node at (11,3.3) {\fbox{\includegraphics[height=100pt]{IP/lowalpha_1uAcrop.pdf}}
 };
-\node at (4.5,3) {
-\Large Horizontal bunch length measurement
+\node at (1,5.5) {
+\large old camera, horizontal bunch length
 };
-\node at (1,-1.2) {
-old camera
+\node at (5.5,4.2) {
+\large new camera, horizontal bunch length
 };
-\node at (7,-1.2) {
-new camera
+\node at (10.8,5.5) {
+\large single bunch measurement
 };
-
+\draw[thick] (3,1.4) to [out=-90,in=180] (3.5,-0.3);
+\draw[thick] (6.55,1.4) to [out=-90,in=0] (6.1,-0.3);
+\node at (4.82,-0.3) { \large one revolution
+};
+\node at (11,-1.5) {\includegraphics[width=2cm]{Pics/qrcode.pdf}};
+\node at (11,-0.5) {
+\begin{varwidth}{3cm}
+tune resonance program source code
+\end{varwidth}
+};
 \end{tikzpicture}
 }
 

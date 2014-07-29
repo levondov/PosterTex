@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.16)  28 JUL 2014 12:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.16)  29 JUL 2014 14:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1367,93 +1367,102 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 13.67995pt on input line 106.
 Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 152.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 152.
+(Font)              scaled to size 11.39996pt on input line 162.
 <Pics/diagramtext.pdf, id=25, 756.2379pt x 361.97998pt>
 File: Pics/diagramtext.pdf Graphic file (type pdf)
 
 <use Pics/diagramtext.pdf>
-Package pdftex.def Info: Pics/diagramtext.pdf used on input line 152.
+Package pdftex.def Info: Pics/diagramtext.pdf used on input line 162.
 (pdftex.def)             Requested size: 350.0pt x 167.5291pt.
 
 <Pics/verticalbeam.pdf, id=26, 1606.0pt x 2852.2561pt>
 File: Pics/verticalbeam.pdf Graphic file (type pdf)
 
 <use Pics/verticalbeam.pdf>
-Package pdftex.def Info: Pics/verticalbeam.pdf used on input line 152.
+Package pdftex.def Info: Pics/verticalbeam.pdf used on input line 162.
 (pdftex.def)             Requested size: 75.0pt x 133.17691pt.
 
 <Pics/horizontaltable.pdf, id=27, 2852.2561pt x 1606.0pt>
 File: Pics/horizontaltable.pdf Graphic file (type pdf)
 
 <use Pics/horizontaltable.pdf>
-Package pdftex.def Info: Pics/horizontaltable.pdf used on input line 152.
+Package pdftex.def Info: Pics/horizontaltable.pdf used on input line 162.
 (pdftex.def)             Requested size: 150.0pt x 84.44614pt.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 152.
 
+<IP/analog10sx50_backgroundsubstractedcrop.pdf, id=28, 939.51pt x 899.36pt>
+File: IP/analog10sx50_backgroundsubstractedcrop.pdf Graphic file (type pdf)
+
+<use IP/analog10sx50_backgroundsubstractedcrop.pdf>
+Package pdftex.def Info: IP/analog10sx50_backgroundsubstractedcrop.pdf used on 
+input line 162.
+(pdftex.def)             Requested size: 104.4646pt x 100.0pt.
+
+<IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf, id=29, 939.51pt x 653.44
+125pt>
+File: IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf Graphic file (type p
+df)
+ <use IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf>
+Package pdftex.def Info: IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf u
+sed on input line 162.
+(pdftex.def)             Requested size: 143.77322pt x 100.0pt.
+
+<IP/lowalpha_1uAcrop.pdf, id=30, 638.385pt x 653.44125pt>
+File: IP/lowalpha_1uAcrop.pdf Graphic file (type pdf)
+
+<use IP/lowalpha_1uAcrop.pdf>
+Package pdftex.def Info: IP/lowalpha_1uAcrop.pdf used on input line 162.
+(pdftex.def)             Requested size: 97.69206pt x 100.0pt.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 162.
+
+<Pics/qrcode.pdf, id=31, 597.23125pt x 845.1575pt>
+File: Pics/qrcode.pdf Graphic file (type pdf)
+ <use Pics/qrcode.pdf>
+Package pdftex.def Info: Pics/qrcode.pdf used on input line 162.
+(pdftex.def)             Requested size: 56.9055pt x 80.52292pt.
+
+Overfull \hbox (0.73653pt too wide) in paragraph at lines 162--162
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+
+ []
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 185.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 185.
 
-
-Package varwidth Warning: Failed to reprocess entire contents on input line 152
-.
-
-
-Package varwidth Warning: Failed to reprocess entire contents on input line 152
-.
-
-<IP/analog10sx50_backgroundsubstracted.pdf, id=28, 939.51pt x 939.51pt>
-File: IP/analog10sx50_backgroundsubstracted.pdf Graphic file (type pdf)
-
-<use IP/analog10sx50_backgroundsubstracted.pdf>
-Package pdftex.def Info: IP/analog10sx50_backgroundsubstracted.pdf used on inpu
-t line 152.
-(pdftex.def)             Requested size: 99.99185pt x 100.0pt.
-
-<IP/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf, id=29, 939.51pt x 939.51pt>
-File: IP/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf Graphic file (type pdf)
-
-<use IP/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf>
-Package pdftex.def Info: IP/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf used 
-on input line 152.
-(pdftex.def)             Requested size: 99.99185pt x 100.0pt.
-
-<IP/lowalpha_1uA.pdf, id=30, 939.51pt x 939.51pt>
-File: IP/lowalpha_1uA.pdf Graphic file (type pdf)
- <use IP/lowalpha_1uA.pdf>
-Package pdftex.def Info: IP/lowalpha_1uA.pdf used on input line 152.
-(pdftex.def)             Requested size: 99.99185pt x 100.0pt.
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Underfull \hbox (badness 1117) in paragraph at lines 175--175
+Underfull \hbox (badness 1117) in paragraph at lines 185--185
 \T1/phv/m/n/10 vance res-o-nance lines and unit work-ing
  []
 
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 175.
-<Pics/image.pdf, id=31, 578.16pt x 433.62pt>
+<Pics/image.pdf, id=32, 578.16pt x 433.62pt>
 File: Pics/image.pdf Graphic file (type pdf)
  <use Pics/image.pdf>
-Package pdftex.def Info: Pics/image.pdf used on input line 175.
+Package pdftex.def Info: Pics/image.pdf used on input line 185.
 (pdftex.def)             Requested size: 200.0pt x 149.99605pt.
 
-<Pics/image2.pdf, id=32, 578.16pt x 433.62pt>
+<Pics/image2.pdf, id=33, 578.16pt x 433.62pt>
 File: Pics/image2.pdf Graphic file (type pdf)
  <use Pics/image2.pdf>
-Package pdftex.def Info: Pics/image2.pdf used on input line 175.
+Package pdftex.def Info: Pics/image2.pdf used on input line 185.
 (pdftex.def)             Requested size: 200.0pt x 149.99605pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (0.75005pt too wide) in paragraph at lines 68--176
+Overfull \hbox (0.75005pt too wide) in paragraph at lines 68--186
 [][] [] 
  []
 
@@ -1473,19 +1482,20 @@ e pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./Pics/horizontaltable.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
-> <./IP/analog10sx50_backgroundsubstracted.pdf
+> <./IP/analog10sx50_backgroundsubstractedcrop.pdf
 
-pdfTeX warning: pdflatex (file ./IP/analog10sx50_backgroundsubstracted.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
-> <./IP/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf
+pdfTeX warning: pdflatex (file ./IP/analog10sx50_backgroundsubstractedcrop.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <./IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf
 
-pdfTeX warning: pdflatex (file ./IP/lowalpha_100mA_zerisseneFuellungmitLuecke.p
-df): PDF inclusion: multiple pdfs with page group included in a single page
-> <./IP/lowalpha_1uA.pdf
+pdfTeX warning: pdflatex (file ./IP/lowalpha_100mA_zerisseneFuellungmitLueckecr
+op.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
-pdfTeX warning: pdflatex (file ./IP/lowalpha_1uA.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
-> <./Pics/image.pdf
+> <./IP/lowalpha_1uAcrop.pdf
+
+pdfTeX warning: pdflatex (file ./IP/lowalpha_1uAcrop.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./Pics/qrcode.pdf> <./Pics/image.pdf
 
 pdfTeX warning: pdflatex (file ./Pics/image.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
@@ -1495,10 +1505,10 @@ pdfTeX warning: pdflatex (file ./Pics/image2.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
 >] (./poster.aux) ) 
 Here is how much of TeX's memory you used:
- 29666 strings out of 493304
- 691654 string characters out of 6139871
- 790066 words of memory out of 5000000
- 32532 multiletter control sequences out of 15000+600000
+ 29689 strings out of 493304
+ 692145 string characters out of 6139871
+ 792066 words of memory out of 5000000
+ 32554 multiletter control sequences out of 15000+600000
  33748 words of font info for 52 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,16n,96p,10394b,1900s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1507,10 +1517,10 @@ Here is how much of TeX's memory you used:
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on poster.pdf (1 page, 30203477 bytes).
+Output written on poster.pdf (1 page, 30206196 bytes).
 PDF statistics:
- 916 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
+ 926 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 words of extra memory for PDF output out of 10000 (max. 10000000)
 
