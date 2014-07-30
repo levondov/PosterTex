@@ -1,0 +1,22 @@
+\contentsline {title}{Author's Guide to AIP Substyles for \revtex \nobreakspace {}4.1}{1}{section*.1}
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{section*.2}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Introduction}{1}{section*.3}
+\contentsline {subsection}{\numberline {A}Prerequisite Documentation}{1}{section*.4}
+\contentsline {subsection}{\numberline {B}Software Requirements}{1}{section*.5}
+\contentsline {subsection}{\numberline {C}Submitting to AIP Journals}{2}{section*.6}
+\contentsline {subsection}{\numberline {D}Contact Information}{2}{section*.7}
+\contentsline {section}{\numberline {II}Sample \LaTeXe \ Document}{2}{section*.8}
+\contentsline {section}{\numberline {III}\revtex \ Class Options Specific to AIP}{2}{section*.9}
+\contentsline {subsection}{\numberline {A}Journal Substyle}{2}{section*.10}
+\contentsline {subsection}{\numberline {B}Options for Citations and Bibliography}{2}{section*.11}
+\contentsline {subsection}{\numberline {C}Formatting Options}{3}{section*.12}
+\contentsline {section}{\numberline {IV}Useful \LaTeXe \ Markup}{3}{section*.13}
+\contentsline {subsection}{\numberline {A}Title and Front Matter}{3}{section*.14}
+\contentsline {subsection}{\numberline {B}Lead Paragraph}{3}{section*.15}
+\contentsline {section}{\numberline {V}Body}{3}{section*.16}
+\contentsline {subsection}{\numberline {A}Footnotes}{3}{section*.17}
+\contentsline {section}{\numberline {VI}Citations and References}{4}{section*.18}
+\contentsline {subsection}{\numberline {A}Using Bib\TeX }{4}{section*.19}
+\contentsline {subsection}{\numberline {B}Multiple References per Citation}{4}{section*.20}

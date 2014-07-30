@@ -57,7 +57,7 @@ headerFontColor=hzbblue
 \includegraphics[width=150pt]{berkeley/ucberkeleybluehex.pdf} 
 }
 {
-\color{hzbblue}Streak camera setup and testing + tune resonance program developement at the MLS
+\color{hzbblue}Summer at HZB
 }
 {
 \color{hzbblue} Levon Dovlatyan, Markus Ries, Paul Goslawski, and friends at HZB \\
@@ -69,18 +69,17 @@ headerFontColor=hzbblue
 \headerbox{Introduction}{name=introbox,column=0,row=0,span=3}
 {
 \begin{tikzpicture}
-\node at (0,4.5)[]{
-\begin{varwidth}{10cm}
-The Metrology Light Source (MLS) is an electron storage ring designed as a dedicated UV and VUV source; it has an asymmetric double-bend achromate design as well as a U180 undulator in one of its long straight sections. Radiation from this undulator as well as the magnets was used in initial test measurements of the bunch lengths with a new streak camera.
-\end{varwidth}
-};
+\node at (1,5)[]{
+\begin{varwidth}{13cm}
+The \textbf{H}elmholtz-\textbf{Z}entrum \textbf{B}erlin is a facility that operates two synchrotron light sources: BESSY II and the MLS. One of the long term goals at these facilities is to continually make bunch lengths as short as possible in the storage rings. A way to go about this is through lattice design, and an important part of lattice design involves picking a good working point to avoid the tune resonances of the machine. A tune resonance program was therefore developed which can be used to view the current working point of any machine given a few parameters.
+\end{varwidth}};
 \node at (0,1){
-\begin{varwidth}{10cm}
-However, the new streak camera's arrival was delayed for a few weeks because of manufacturing problems; this allowed time to develope a tune resonance program to be used mainly at the MLS. The program is written in python making it much easier to integrate with the systems at Bessy II (HZB) and the MLS (PTB).
-\end{varwidth}
-};
-\node at (14.0,3) {\includegraphics[width=250pt]{Pics/mls.pdf}};
-\node at (10.5,0) {\footnotesize
+\begin{varwidth}{11cm}
+Another way of looking into bunch lengths at HZB is through diagnostic tools. A new streak camera was recently purchased for BESSY II, but is currently being setup and tested at the MLS where the old streak camera also resides. The setup proved to be quite a challenged because of the placement of the camera and beamline. An optical setup that needed to provide three degrees of freedom was setup; this setup also provided the opportunity to operate both streak cameras (old and new) at the same time and compare measurements.
+\end{varwidth}};
+
+\node at (12.0,3) {\includegraphics[width=250pt]{Pics/mls.pdf}};
+\node at (9,0) {\footnotesize
 \begin{tabular}{lc}%\hline
 Lattice & {DBA}\\
 Energy range / \si{\mega\electronvolt} &  105 to 630\\
@@ -91,21 +90,18 @@ Current$\times$Lifetime / \si{\ampere\hour}&  0.9  \\%\\\hline
 electron beam current & 1 pA to 200 mA
 \end{tabular}%
 };
-\node at (14,3.8){
+\node at (12,3.8){
 \Huge\color{hzbblue} MLS
 };
-\node at (7.5,4){\fbox{\includegraphics[width=100pt]{Pics/beam}}
+\draw [<-, rounded corners, thick, black] (11,6.5) -- (12.5,6.4);
+\node at (14,6.4) {
+beamline used
 };
-\node at (7.5,2){
-Beam used for alignment
-};
-\node at (17, -0.4){\includegraphics[width=50pt]{Pics/PTB-Logo.pdf}};
-%\draw[<->,thick] (1.3,3.75) -- node[midway,below] {$\Delta
-%x\propto\eta_x$} (3.7,3.75);
+\node at (16, 0.4){\includegraphics[width=50pt]{Pics/PTB-Logo.pdf}};
 \end{tikzpicture}
 }
 
-\headerbox{Streak Camera}{name=firstbox,below=introbox,column=0,row=1,span=2,above=bottom}
+\headerbox{Setup}{name=firstbox,below=introbox,column=0,row=1,span=2}
 {
 {\color{hzbblue}\bf\large Setup} \\[0.5cm]
 \begin{tikzpicture}
@@ -128,8 +124,10 @@ The toroidal mirrors, along with a splitter and a normal mirror, on the optical 
 \end{varwidth}
 };
 \end{tikzpicture}
+}
 
-
+\headerbox{Measurements}{name=secondbox,below=firstbox,column=0,row=2,span=2,above=bottom}
+{
 {\color{hzbblue}\bf\large Measurements} \\[0.5cm]
 \begin{tikzpicture}[]
 
@@ -152,10 +150,15 @@ The toroidal mirrors, along with a splitter and a normal mirror, on the optical 
 \draw[thick] (6.55,1.4) to [out=-90,in=0] (6.1,-0.3);
 \node at (4.82,-0.3) { \large one revolution
 };
-\node at (11,-1.5) {\includegraphics[width=2cm]{Pics/qrcode.pdf}};
-\node at (11,-0.5) {
+\node at (11,-0.5) {\includegraphics[width=2cm]{Pics/qrcode.pdf}};
+\node at (11,0.5) {
 \begin{varwidth}{3cm}
 tune resonance program source code
+\end{varwidth}
+};
+\node at (0,0) {
+\begin{varwidth}{3cm}
+The new streak camera has a much more improved ability to filter out noise and white light
 \end{varwidth}
 };
 \end{tikzpicture}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.16)  29 JUL 2014 14:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.16)  30 JUL 2014 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1331,146 +1331,153 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 File: Pics/mls.pdf Graphic file (type pdf)
 
 <use Pics/mls.pdf>
-Package pdftex.def Info: Pics/mls.pdf used on input line 106.
+Package pdftex.def Info: Pics/mls.pdf used on input line 102.
 (pdftex.def)             Requested size: 250.0pt x 205.05984pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 106.
+(Font)              scaled to size 7.59998pt on input line 102.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 23.63593pt on input line 106.
- <Pics/beam.jpg, id=23, 992.70876pt x 895.345pt>
-File: Pics/beam.jpg Graphic file (type jpg)
-
-<use Pics/beam.jpg>
-Package pdftex.def Info: Pics/beam.jpg used on input line 106.
-(pdftex.def)             Requested size: 100.0pt x 90.18184pt.
- <Pics/PTB-Logo.pdf, id=24, 312.9803pt x 191.47534pt>
+(Font)              scaled to size 23.63593pt on input line 102.
+ <Pics/PTB-Logo.pdf, id=23, 312.9803pt x 191.47534pt>
 File: Pics/PTB-Logo.pdf Graphic file (type pdf)
 
 <use Pics/PTB-Logo.pdf>
-Package pdftex.def Info: Pics/PTB-Logo.pdf used on input line 106.
+Package pdftex.def Info: Pics/PTB-Logo.pdf used on input line 102.
 (pdftex.def)             Requested size: 50.0pt x 30.587pt.
-
-Overfull \hbox (1.29958pt too wide) in paragraph at lines 106--106
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
-
- []
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 106.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 102.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 106.
+(Font)              scaled to size 13.67995pt on input line 102.
 Missing character: There is no ; in font nullfont!
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 162.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 162.
-<Pics/diagramtext.pdf, id=25, 756.2379pt x 361.97998pt>
+(Font)              scaled to size 11.39996pt on input line 127.
+
+<Pics/diagramtext.pdf, id=24, 756.2379pt x 361.97998pt>
 File: Pics/diagramtext.pdf Graphic file (type pdf)
 
 <use Pics/diagramtext.pdf>
-Package pdftex.def Info: Pics/diagramtext.pdf used on input line 162.
+Package pdftex.def Info: Pics/diagramtext.pdf used on input line 127.
 (pdftex.def)             Requested size: 350.0pt x 167.5291pt.
 
-<Pics/verticalbeam.pdf, id=26, 1606.0pt x 2852.2561pt>
+<Pics/verticalbeam.pdf, id=25, 1606.0pt x 2852.2561pt>
 File: Pics/verticalbeam.pdf Graphic file (type pdf)
 
 <use Pics/verticalbeam.pdf>
-Package pdftex.def Info: Pics/verticalbeam.pdf used on input line 162.
+Package pdftex.def Info: Pics/verticalbeam.pdf used on input line 127.
 (pdftex.def)             Requested size: 75.0pt x 133.17691pt.
 
-<Pics/horizontaltable.pdf, id=27, 2852.2561pt x 1606.0pt>
+<Pics/horizontaltable.pdf, id=26, 2852.2561pt x 1606.0pt>
 File: Pics/horizontaltable.pdf Graphic file (type pdf)
 
 <use Pics/horizontaltable.pdf>
-Package pdftex.def Info: Pics/horizontaltable.pdf used on input line 162.
+Package pdftex.def Info: Pics/horizontaltable.pdf used on input line 127.
 (pdftex.def)             Requested size: 150.0pt x 84.44614pt.
 
-<IP/analog10sx50_backgroundsubstractedcrop.pdf, id=28, 939.51pt x 899.36pt>
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+
+ []
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+<IP/analog10sx50_backgroundsubstractedcrop.pdf, id=27, 939.51pt x 899.36pt>
 File: IP/analog10sx50_backgroundsubstractedcrop.pdf Graphic file (type pdf)
 
 <use IP/analog10sx50_backgroundsubstractedcrop.pdf>
 Package pdftex.def Info: IP/analog10sx50_backgroundsubstractedcrop.pdf used on 
-input line 162.
+input line 165.
 (pdftex.def)             Requested size: 104.4646pt x 100.0pt.
 
-<IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf, id=29, 939.51pt x 653.44
+<IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf, id=28, 939.51pt x 653.44
 125pt>
 File: IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf Graphic file (type p
 df)
  <use IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf>
 Package pdftex.def Info: IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf u
-sed on input line 162.
+sed on input line 165.
 (pdftex.def)             Requested size: 143.77322pt x 100.0pt.
 
-<IP/lowalpha_1uAcrop.pdf, id=30, 638.385pt x 653.44125pt>
+<IP/lowalpha_1uAcrop.pdf, id=29, 638.385pt x 653.44125pt>
 File: IP/lowalpha_1uAcrop.pdf Graphic file (type pdf)
 
 <use IP/lowalpha_1uAcrop.pdf>
-Package pdftex.def Info: IP/lowalpha_1uAcrop.pdf used on input line 162.
+Package pdftex.def Info: IP/lowalpha_1uAcrop.pdf used on input line 165.
 (pdftex.def)             Requested size: 97.69206pt x 100.0pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 162.
+(Font)              scaled to size 11.39996pt on input line 165.
 
-<Pics/qrcode.pdf, id=31, 597.23125pt x 845.1575pt>
+<Pics/qrcode.pdf, id=30, 597.23125pt x 845.1575pt>
 File: Pics/qrcode.pdf Graphic file (type pdf)
  <use Pics/qrcode.pdf>
-Package pdftex.def Info: Pics/qrcode.pdf used on input line 162.
+Package pdftex.def Info: Pics/qrcode.pdf used on input line 165.
 (pdftex.def)             Requested size: 56.9055pt x 80.52292pt.
 
-Overfull \hbox (0.73653pt too wide) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
+[]\T1/phv/m/n/10 The new streak
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 165
+[]\T1/phv/m/n/10 The new streak
+ []
+
+
+Overfull \hbox (0.73653pt too wide) in paragraph at lines 165--165
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 165--165
 
  []
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 185.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 188.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 185.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
 
-Underfull \hbox (badness 1117) in paragraph at lines 185--185
+Underfull \hbox (badness 1117) in paragraph at lines 188--188
 \T1/phv/m/n/10 vance res-o-nance lines and unit work-ing
  []
 
-<Pics/image.pdf, id=32, 578.16pt x 433.62pt>
+<Pics/image.pdf, id=31, 578.16pt x 433.62pt>
 File: Pics/image.pdf Graphic file (type pdf)
  <use Pics/image.pdf>
-Package pdftex.def Info: Pics/image.pdf used on input line 185.
+Package pdftex.def Info: Pics/image.pdf used on input line 188.
 (pdftex.def)             Requested size: 200.0pt x 149.99605pt.
 
-<Pics/image2.pdf, id=33, 578.16pt x 433.62pt>
+<Pics/image2.pdf, id=32, 578.16pt x 433.62pt>
 File: Pics/image2.pdf Graphic file (type pdf)
  <use Pics/image2.pdf>
-Package pdftex.def Info: Pics/image2.pdf used on input line 185.
+Package pdftex.def Info: Pics/image2.pdf used on input line 188.
 (pdftex.def)             Requested size: 200.0pt x 149.99605pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (0.75005pt too wide) in paragraph at lines 68--186
+Overfull \hbox (0.75005pt too wide) in paragraph at lines 68--189
 [][] [] 
  []
 
 [2
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./berkeley/ucberkeleyblueh
-ex.pdf> <./Pics/hzb_logo_clean.pdf> <./Pics/mls.pdf> <./Pics/beam.jpg> <./Pics/
-PTB-Logo.pdf> <./Pics/diagramtext.pdf
+ex.pdf> <./Pics/hzb_logo_clean.pdf> <./Pics/mls.pdf> <./Pics/PTB-Logo.pdf> <./P
+ics/diagramtext.pdf
 
 pdfTeX warning: pdflatex (file ./Pics/diagramtext.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -1505,11 +1512,11 @@ pdfTeX warning: pdflatex (file ./Pics/image2.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
 >] (./poster.aux) ) 
 Here is how much of TeX's memory you used:
- 29689 strings out of 493304
- 692145 string characters out of 6139871
- 792066 words of memory out of 5000000
- 32554 multiletter control sequences out of 15000+600000
- 33748 words of font info for 52 fonts, out of 8000000 for 9000
+ 29765 strings out of 493304
+ 694068 string characters out of 6139871
+ 794066 words of memory out of 5000000
+ 32632 multiletter control sequences out of 15000+600000
+ 34845 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,16n,96p,10394b,1900s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
@@ -1517,10 +1524,10 @@ Here is how much of TeX's memory you used:
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on poster.pdf (1 page, 30206196 bytes).
+Output written on poster.pdf (1 page, 30032295 bytes).
 PDF statistics:
- 926 PDF objects out of 1000 (max. 8388607)
+ 925 PDF objects out of 1000 (max. 8388607)
  192 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
