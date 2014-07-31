@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.16)  30 JUL 2014 14:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.16)  31 JUL 2014 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,126 +1350,120 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 13.67995pt on input line 102.
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 127.
 
 <Pics/diagramtext.pdf, id=24, 756.2379pt x 361.97998pt>
 File: Pics/diagramtext.pdf Graphic file (type pdf)
 
 <use Pics/diagramtext.pdf>
-Package pdftex.def Info: Pics/diagramtext.pdf used on input line 127.
+Package pdftex.def Info: Pics/diagramtext.pdf used on input line 126.
 (pdftex.def)             Requested size: 350.0pt x 167.5291pt.
 
 <Pics/verticalbeam.pdf, id=25, 1606.0pt x 2852.2561pt>
 File: Pics/verticalbeam.pdf Graphic file (type pdf)
 
 <use Pics/verticalbeam.pdf>
-Package pdftex.def Info: Pics/verticalbeam.pdf used on input line 127.
+Package pdftex.def Info: Pics/verticalbeam.pdf used on input line 126.
 (pdftex.def)             Requested size: 75.0pt x 133.17691pt.
 
 <Pics/horizontaltable.pdf, id=26, 2852.2561pt x 1606.0pt>
 File: Pics/horizontaltable.pdf Graphic file (type pdf)
 
 <use Pics/horizontaltable.pdf>
-Package pdftex.def Info: Pics/horizontaltable.pdf used on input line 127.
+Package pdftex.def Info: Pics/horizontaltable.pdf used on input line 126.
 (pdftex.def)             Requested size: 150.0pt x 84.44614pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
 
  []
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-<IP/analog10sx50_backgroundsubstractedcrop.pdf, id=27, 939.51pt x 899.36pt>
-File: IP/analog10sx50_backgroundsubstractedcrop.pdf Graphic file (type pdf)
 
-<use IP/analog10sx50_backgroundsubstractedcrop.pdf>
-Package pdftex.def Info: IP/analog10sx50_backgroundsubstractedcrop.pdf used on 
-input line 165.
-(pdftex.def)             Requested size: 104.4646pt x 100.0pt.
+<IP/levon/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf, id=27, 578.16pt x 433.
+62pt>
+File: IP/levon/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf Graphic file (type
+ pdf)
+ <use IP/levon/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf>
+Package pdftex.def Info: IP/levon/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf
+ used on input line 158.
+(pdftex.def)             Requested size: 233.33307pt x 175.0pt.
 
-<IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf, id=28, 939.51pt x 653.44
-125pt>
-File: IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf Graphic file (type p
-df)
- <use IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf>
-Package pdftex.def Info: IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf u
-sed on input line 165.
-(pdftex.def)             Requested size: 143.77322pt x 100.0pt.
+<IP/levon/lowalpha_100mA_zerisseneFuellungmitLueckegraph.pdf, id=28, 578.16pt x
+ 433.62pt>
+File: IP/levon/lowalpha_100mA_zerisseneFuellungmitLueckegraph.pdf Graphic file 
+(type pdf)
+ <use IP/levon/lowalpha_100mA_zerisseneFuellungmitLueckegraph.pdf>
+Package pdftex.def Info: IP/levon/lowalpha_100mA_zerisseneFuellungmitLueckegrap
+h.pdf used on input line 158.
+(pdftex.def)             Requested size: 233.33307pt x 175.0pt.
 
-<IP/lowalpha_1uAcrop.pdf, id=29, 638.385pt x 653.44125pt>
-File: IP/lowalpha_1uAcrop.pdf Graphic file (type pdf)
+<IP/levon/lowalpha_1uA.pdf, id=29, 578.16pt x 433.62pt>
+File: IP/levon/lowalpha_1uA.pdf Graphic file (type pdf)
 
-<use IP/lowalpha_1uAcrop.pdf>
-Package pdftex.def Info: IP/lowalpha_1uAcrop.pdf used on input line 165.
-(pdftex.def)             Requested size: 97.69206pt x 100.0pt.
+<use IP/levon/lowalpha_1uA.pdf>
+Package pdftex.def Info: IP/levon/lowalpha_1uA.pdf used on input line 158.
+(pdftex.def)             Requested size: 233.33307pt x 175.0pt.
+
+<IP/levon/lowalpha_1uAgraph.pdf, id=30, 578.16pt x 433.62pt>
+File: IP/levon/lowalpha_1uAgraph.pdf Graphic file (type pdf)
+
+<use IP/levon/lowalpha_1uAgraph.pdf>
+Package pdftex.def Info: IP/levon/lowalpha_1uAgraph.pdf used on input line 158.
+
+(pdftex.def)             Requested size: 233.33307pt x 175.0pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 165.
+(Font)              scaled to size 11.39996pt on input line 158.
 
-<Pics/qrcode.pdf, id=30, 597.23125pt x 845.1575pt>
-File: Pics/qrcode.pdf Graphic file (type pdf)
- <use Pics/qrcode.pdf>
-Package pdftex.def Info: Pics/qrcode.pdf used on input line 165.
-(pdftex.def)             Requested size: 56.9055pt x 80.52292pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--165
-[]\T1/phv/m/n/10 The new streak
+Underfull \hbox (badness 4168) in paragraph at lines 158--158
+\T1/phv/m/n/10 in-side the cam-era back
  []
 
 
-Underfull \hbox (badness 10000) detected at line 165
-[]\T1/phv/m/n/10 The new streak
- []
-
-
-Overfull \hbox (0.73653pt too wide) in paragraph at lines 165--165
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--165
-
+Underfull \hbox (badness 4168) detected at line 158
+\T1/phv/m/n/10 in-side the cam-era back
  []
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 188.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 181.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 181.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 181.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 181.
 
-Underfull \hbox (badness 1117) in paragraph at lines 188--188
+Underfull \hbox (badness 1117) in paragraph at lines 181--181
 \T1/phv/m/n/10 vance res-o-nance lines and unit work-ing
  []
 
 <Pics/image.pdf, id=31, 578.16pt x 433.62pt>
 File: Pics/image.pdf Graphic file (type pdf)
  <use Pics/image.pdf>
-Package pdftex.def Info: Pics/image.pdf used on input line 188.
+Package pdftex.def Info: Pics/image.pdf used on input line 181.
 (pdftex.def)             Requested size: 200.0pt x 149.99605pt.
 
 <Pics/image2.pdf, id=32, 578.16pt x 433.62pt>
 File: Pics/image2.pdf Graphic file (type pdf)
  <use Pics/image2.pdf>
-Package pdftex.def Info: Pics/image2.pdf used on input line 188.
+Package pdftex.def Info: Pics/image2.pdf used on input line 181.
 (pdftex.def)             Requested size: 200.0pt x 149.99605pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (0.75005pt too wide) in paragraph at lines 68--189
+Overfull \hbox (0.75005pt too wide) in paragraph at lines 68--182
 [][] [] 
  []
 
@@ -1489,20 +1483,25 @@ e pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./Pics/horizontaltable.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
-> <./IP/analog10sx50_backgroundsubstractedcrop.pdf
+> <./IP/levon/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf
 
-pdfTeX warning: pdflatex (file ./IP/analog10sx50_backgroundsubstractedcrop.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
-> <./IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf
+pdfTeX warning: pdflatex (file ./IP/levon/lowalpha_100mA_zerisseneFuellungmitLu
+ecke.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <./IP/levon/lowalpha_100mA_zerisseneFuellungmitLueckegraph.pdf
 
-pdfTeX warning: pdflatex (file ./IP/lowalpha_100mA_zerisseneFuellungmitLueckecr
-op.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./IP/levon/lowalpha_100mA_zerisseneFuellungmitLu
+eckegraph.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <./IP/levon/lowalpha_1uA.pdf
 
-> <./IP/lowalpha_1uAcrop.pdf
+pdfTeX warning: pdflatex (file ./IP/levon/lowalpha_1uA.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./IP/levon/lowalpha_1uAgraph.pdf
 
-pdfTeX warning: pdflatex (file ./IP/lowalpha_1uAcrop.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
-> <./Pics/qrcode.pdf> <./Pics/image.pdf
+pdfTeX warning: pdflatex (file ./IP/levon/lowalpha_1uAgraph.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+> <./Pics/image.pdf
 
 pdfTeX warning: pdflatex (file ./Pics/image.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
@@ -1512,10 +1511,10 @@ pdfTeX warning: pdflatex (file ./Pics/image2.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
 >] (./poster.aux) ) 
 Here is how much of TeX's memory you used:
- 29765 strings out of 493304
- 694068 string characters out of 6139871
- 794066 words of memory out of 5000000
- 32632 multiletter control sequences out of 15000+600000
+ 29767 strings out of 493304
+ 694253 string characters out of 6139871
+ 792066 words of memory out of 5000000
+ 32634 multiletter control sequences out of 15000+600000
  34845 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,16n,96p,10394b,1900s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1524,10 +1523,10 @@ Here is how much of TeX's memory you used:
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on poster.pdf (1 page, 30032295 bytes).
+Output written on poster.pdf (1 page, 29127801 bytes).
 PDF statistics:
- 925 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
+ 961 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

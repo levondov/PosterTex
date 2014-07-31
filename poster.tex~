@@ -101,9 +101,8 @@ beamline used
 \end{tikzpicture}
 }
 
-\headerbox{Streak Camera Setup}{name=firstbox,below=introbox,column=0,row=1,span=2}
-{
-{\color{hzbblue}\bf\large Setup} \\[0.5cm]
+\headerbox{Setup}{name=firstbox,below=introbox,column=0,row=1,span=2}
+{\\
 \begin{tikzpicture}
 
 \node at (1,0) {\includegraphics[width=350pt]{Pics/diagramtext.pdf}
@@ -126,39 +125,33 @@ The toroidal mirrors, along with a splitter and a normal mirror, on the optical 
 \end{tikzpicture}
 }
 
-\headerbox{Streak Camera Measurements}{name=secondbox,below=firstbox,column=0,row=2,span=2,above=bottom}
+\headerbox{Measurements}{name=secondbox,below=firstbox,column=0,row=2,span=2,above=bottom}
 {
-{\color{hzbblue}\bf\large Measurements} \\[0.5cm]
 \begin{tikzpicture}[]
 
-\node at (0,3.3) {\fbox{\includegraphics[height=100pt]{IP/analog10sx50_backgroundsubstractedcrop.pdf}}
+
+\node at (0,4) {\includegraphics[height=175pt]{IP/levon/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf}
 };
-\node at (5.5,2) {\fbox{\includegraphics[height=100pt]{IP/lowalpha_100mA_zerisseneFuellungmitLueckecrop.pdf}}
+\node at (0,4) {\includegraphics[height=175pt]{IP/levon/lowalpha_100mA_zerisseneFuellungmitLueckegraph.pdf}
 };
-\node at (11,3.3) {\fbox{\includegraphics[height=100pt]{IP/lowalpha_1uAcrop.pdf}}
+\node at (7,4) {\includegraphics[height=175pt]{IP/levon/lowalpha_1uA.pdf}
 };
-\node at (1,5.5) {
-\large old camera, horizontal bunch length
+\node at (7,4) {\includegraphics[height=175pt]{IP/levon/lowalpha_1uAgraph.pdf}
 };
-\node at (5.5,4.2) {
-\large new camera, horizontal bunch length
+\node at (0,6.7) {
+\large horizontal bunch length
 };
-\node at (10.8,5.5) {
+\node at (7,6.7) {
 \large single bunch measurement
 };
-\draw[thick] (3,1.4) to [out=-90,in=180] (3.5,-0.3);
-\draw[thick] (6.55,1.4) to [out=-90,in=0] (6.1,-0.3);
-\node at (4.82,-0.3) { \large one revolution
+\draw[<-,thick] (-3,3) to [out=-90,in=180] (-1.4,0.5);
+\draw[<-,thick] (1.35,3) to [out=-90,in=0] (1.4,0.5);
+\node at (0,0.5) { \large one revolution
 };
-\node at (11,-0.5) {\includegraphics[width=2cm]{Pics/qrcode.pdf}};
-\node at (11,0.5) {
-\begin{varwidth}{3cm}
-tune resonance program source code
-\end{varwidth}
-};
-\node at (0,0) {
-\begin{varwidth}{3cm}
-The new streak camera has a much more improved ability to filter out noise and white light
+\draw [->, rounded corners, thick, black] (6.5,1) -- (6.9,3);
+\node at (6.5,0.2) {
+\begin{varwidth}{4cm}
+possibly a reflection from inside the camera back onto the fluorescent screen
 \end{varwidth}
 };
 \end{tikzpicture}
