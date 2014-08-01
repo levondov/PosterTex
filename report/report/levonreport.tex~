@@ -29,7 +29,7 @@
 
 \begin{document}
 
-\title{Streak Camera Diagnostics and Tune Resonance Tools at HZB}%
+\title{Streak Camera Systems and Tune Resonance Tools at HZB}%
 
 \author{Levon Dovlatyan, Markus Ries, Paul Goslawski, and friends at HZB}%
 \email{levondov@berkeley.edu}
@@ -44,123 +44,22 @@
 
 \section{Introduction}
 
-The Helmholtz-Zentrum Berlin is a facility that operates two synchrotron light sources: BESSY II and the MLS. One of the long term goals at these facilities is to continually make bunch lengths as short as possible in the storage rings. A way to go about this is through lattice design, and an important part of lattice design involves picking a good working point to avoid the tune resonances of the machine. A tune resonance program was therefore developed which can be used to view the current working point of any machine given a few parameters.
+The Helmholtz-Zentrum Berlin is a facility that operates two synchrotron light sources: BESSY II and the MLS. One of the long term goals of this center is to continually make bunch lengths as short as possible in storage rings. A way to go about this is through lattice design by changing the momentum compaction factor. An important part of lattice design involves picking a good working point to avoid the tune resonances of the machine. A tune resonance program was therefore developed which can be used to view the current working point and resonance lines given only a few input parameters from the EPICS control systems.
 
-Another way of looking into bunch lengths at HZB is through diagnostic tools. A new streak camera was recently purchased for BESSY II, but is currently being setup and tested at the MLS where the old streak camera also resides. The setup proved to be quite a challenged because of the placement of the camera and beamline. An optical setup that needed to provide three degrees of freedom was setup; this setup also provided the opportunity to operate both streak cameras (old and new) at the same time and compare measurements.
+Another way of looking into bunch lengths at HZB is through diagnostic tools. A new streak camera was recently purchased for the MLS, and is currently being setup and tested at there where the old streak camera also resides. The Metrology Light Source (MLS) is an electron storage ring designed as a dedicated UV and VUV source; it has an asymmetric double-bend achromate design as well as six beamlines, two of which are located on a second floor, above the synchrotron. Both the new and the old streak cameras are setup with a UV beamline on the second floor, directly above the machine. Being on the second floor and having the cameras setup far away from the beamline required advanced optical solutions in order to get a focused beam into the slit of the cameras.
 
+\section{Tune Resonance Program}
 
-\subsection{Prerequisite Documentation}
+\subsection{Developement}
+The program was written in Python. This provided the opportunity to integrate with EPICS (Experimental Physics and Industrial Control System) through a special python package called PyEpics and build a GUI system using wxPython to make the program simple to use. Much of the program also relies heavily on numpy and matplotlib packages available for Python.
 
-The following documentation should be considered your first source of information 
-on how to prepare your document for use with this format; 
-they are to be found within the APS \revtex~4.1 distribution. 
-Updated versions of these are maintained at
-the \revtex~4.1 homepage located at \url{http://authors.aps.org/revtex4/},
-are also available at the Comprehensive \TeX\ Archive Network (CTAN, see \url{http://www.ctan.org/}), 
-and form part of the \TeX Live distribution of \TeX.
-\begin{itemize}
-\item \textit{Author's Guide to \revtex~4.1}
-\item \textit{\revtex~4.1 Command and Options Summary}
-\item \textit{What's New in \revtex~4.1}
-\end{itemize}
-The present guide builds upon these documents, with which you should already be familiar.
-
-The AIP substyles distribution for \revtex~4.1 includes 
-a sample document (\file{aipsamp.tex}), 
-a good starting point for 
-the manuscript you are preparing for submission to an AIP journal.
-
-By using \revtex's \textit{Author's Guide to \revtex~4.1}, you can develop your
-document until it contains all of the content you desire.
-This guide informs you on document class options, commands, and 
-markup guidelines specific to AIP journals. 
-
-\subsection{Software Requirements}
-
-This guide assumes a working \revtex~4.1 installation including the AIP substyles. 
-Please see the installation guide included with the distribution.\cite{Note1}
-
-Please note that the AIP substyles work {\it only} with \revtex~4.1: 
-the original \revtex~4.0 release does {\it not} make the AIP substyle available, nor is it compatible with them. 
-
-For your computer to run \revtex~4.1 with the AIP substyles, the following are required:
-\begin{itemize}
-\item
-a working installation of \LaTeX\,
-\item
-\revtex~4.1 and all packages it requires,
-\item
-the AIP substyles for \revtex~4.1, and
-\item
-any further \LaTeX\ packages used in your document. 
-\end{itemize}
-
-The easiest way to obtain all of the needed software is to install an up-to-date distribution of \TeX,
-like \TeX Live, available on CTAN.
-
-To obtain the most up-to-date version of this software, please see \url{http://www.aip.org/pubservs/compuscript.html}.
+The biggest feature of the program is a 'live mode' option that is able to give the current tune position numerically and graphically. Using the proper epics channels, the program is able to grab the four values it needs to calculate the non integer tune: the RF cavity frequency, the harmonic number, and the horizontal and vertical betatron oscillation frequencies. The program can check and update the tune several times a second, but in order to have the visual display updated, a threading process was used to avoid having the GUI freeze up while in live mode. The threading process is able to do all the processing and updating of the matplotlib graph, continously updating the point on the graph.
 
 
-\subsection{Submitting to AIP Journals}
 
-Authors preparing a manuscript for submission to
-AIP journals should consult the Information for Contributors for the applicable journal,
-available through links at \url{http://journals.aip.org/}. 
-These requirements are not covered systematically in this author's guide; 
-you are responsible for understanding the requirements of the particular journal to which
-you will submit your article.
+\subsection{Customizability}
 
-For further information about journal requirements, contact the Editorial
-Office of the appropriate journal. (Follow links at \url{http://journals.aip.org/}.)
-
-\subsection{Contact Information}\label{sec:resources}%
-Any bugs, problems, or inconsistencies concerning the AIP journal substyles
-should be reported to AIP support at \href{mailto:tex@aip.org}{tex@aip.org}. 
-Reports should include information on the error and a 
-\textit{small} sample document that manifests the problem, if possible. 
-(Please don't send large files!) 
-
-Feedback concerning \revtex~4.1 itself should be sent, as usual, 
-to the American Physical Society at\\ \href{mailto:revtex@aps.org}{revtex@aps.org}. 
-
-To determine if the problem you are experiencing belongs to \revtex\ or is specific to the
-AIP substyles, simply remove \texttt{aip} from your document class options and rerun 
-your document. If the problem goes away, you may assume that it is due to the AIP substyles;
-if not, it belongs to \revtex.
-
-\section{Sample \LaTeXe\ Document}
-As the \revtex\ documentation makes clear, your document employs a \LaTeXe\ document class
-(specifically \texttt{revtex4-1.cls}), so you should use 
-the \LaTeXe\ commands and environments familiar to you with, say, the
-standard article class \texttt{revtex4-1.cls}, and you will be able to 
-employ many of the packages you are used to using with \LaTeXe.
-
-Using \texttt{aipsamp.tex} as an example, 
-your document will start with the usual \revtex\ \cmd\documentclass\ statement, but with
-a particular document class option \texttt{aip} that specifies the AIP substyle:
-\begin{verbatim}
-\documentclass[aip]{revtex4-1}
-\end{verbatim}
-You will then invoke the \LaTeXe\-compatible packages your document requires, say:
-\begin{verbatim}
-\usepackage{graphicx}%
-\usepackage{dcolumn}%
-\usepackage{bm}%
-\end{verbatim}
-follow up with your document content:
-\begin{verbatim}
-\begin{document}
-...
-\end{verbatim}
-and finish with a statement specifying your Bib\TeX\ database:
-\begin{verbatim}
-\bibliography{aipsamp}
-\end{document}
-\end{verbatim}
-
-The books
-in the bibliography of this guide provide extensive coverage of all topics
-pertaining to preparing documents under \LaTeXe\; they are highly recommended. 
+\subsection{Future Improvements}
 
 \section{\revtex\ Class Options Specific to AIP}
 
@@ -171,25 +70,6 @@ To access particular features of the AIP substyle, you will specify an additiona
 \end{verbatim}
 in this case, \textit{J. Chem. Phys.}, the default. 
 A complete list of AIP journals with the corresponding journal substyle appears in Table~\ref{tab:journals}.
-\begin{table}
-\caption{\label{tab:journals}AIP journal substyles}
-\begin{ruledtabular}
-\begin{tabular}{ll}
-\textbf{Journal} & \textbf{class option} \\
-\itshape Appl. Phys. Lett. &\texttt{apl}\\
-\itshape Biomicrofluidics  &\texttt{bmf}\\
-\itshape Chaos             &\texttt{cha}\\
-\itshape J. Appl. Phys.    &\texttt{jap}\\
-\itshape J. Chem. Phys.    &\texttt{jcp}\footnotemark[1]\\
-\itshape J. Math. Phys.    &\texttt{jmp}\\
-\itshape J. Renewable Sustainable Energy&\texttt{rse}\\
-\itshape Phys. Fluids      &\texttt{pof}\\
-\itshape Phys. Plasmas     &\texttt{pop}\\
-\itshape Rev. Sci. Instrum.&\texttt{rsi}\\
-\end{tabular}
-\end{ruledtabular}
-\footnotetext[1]{Default journal substyle.}
-\end{table}
 
 \subsection{Options for Citations and Bibliography}
 The citation style for AIP journals is:

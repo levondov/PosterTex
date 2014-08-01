@@ -57,10 +57,10 @@ headerFontColor=hzbblue
 \includegraphics[width=150pt]{berkeley/ucberkeleybluehex.pdf} 
 }
 {
-\color{hzbblue}Summer at HZB
+\color{hzbblue}Streak camera System and Tune Resonance Tool
 }
 {
-\color{hzbblue} Levon Dovlatyan, Markus Ries, Paul Goslawski, and friends at HZB \\
+\color{hzbblue} L. Dovlatyan, M. Ries, P. Goslawski, and friends at HZB \\
 \color{hzbblue} levondov@berkeley.edu
 }
 {
@@ -71,11 +71,12 @@ headerFontColor=hzbblue
 \begin{tikzpicture}
 \node at (1,5)[]{
 \begin{varwidth}{13cm}
-The \textbf{H}elmholtz-\textbf{Z}entrum \textbf{B}erlin is a facility that operates two synchrotron light sources: BESSY II and the MLS. One of the long term goals at these facilities is to continually make bunch lengths as short as possible in the storage rings. A way to go about this is through lattice design, and an important part of lattice design involves picking a good working point to avoid the tune resonances of the machine. A tune resonance program was therefore developed which can be used to view the current working point of any machine given a few parameters.
+The \textbf{H}elmholtz-\textbf{Z}entrum \textbf{B}erlin is a facility that operates two synchrotron light sources: BESSY II and the MLS. One of the long term goals of this center is to continually make bunch lengths as short as possible in storage rings. A way to go about this is through lattice design by changing the momentum compaction factor. An important part of lattice design involves picking a good working point to avoid the tune resonances of the machine. A tune resonance program was therefore developed which can be used to view the current working point and resonance lines given only a few input parameters from the EPICS control systems.
+
 \end{varwidth}};
 \node at (0,1){
 \begin{varwidth}{11cm}
-Another way of looking into bunch lengths at HZB is through diagnostic tools. A new streak camera was recently purchased for BESSY II, but is currently being setup and tested at the MLS where the old streak camera also resides. The setup proved to be quite a challenged because of the placement of the camera and beamline. An optical setup that needed to provide three degrees of freedom was setup; this setup also provided the opportunity to operate both streak cameras (old and new) at the same time and compare measurements.
+In order to study shortest bunches, diagnostic tools are needed. A new streak camera was recently purchased for the MLS, and was setup at a beamline above the machine on the second floor. The setup proved to be quite a challenged because of the placement of the camera and beamline. An optical path that needed six degrees (x,x',y,y',z,z') of freedom was setup; this setup also provided the opportunity to operate the old streak camera along side the new camera simulatanously and compare measurements.
 \end{varwidth}};
 
 \node at (12.0,3) {\includegraphics[width=250pt]{Pics/mls.pdf}};
@@ -85,7 +86,7 @@ Lattice & {DBA}\\
 Energy range / \si{\mega\electronvolt} &  105 to 630\\
 Circumference / \si{\metre} &  48\\
 Characteristic wavelength / \si{\nano\metre} &  3.4 to 735 \\
-Tunes hor./ver. & {3.18 / 2.23}\\
+Tunes ver./hor. & {2.23 / 3.18}\\
 Current$\times$Lifetime / \si{\ampere\hour}&  0.9  \\%\\\hline
 electron beam current & 1 pA to 200 mA
 \end{tabular}%
@@ -93,33 +94,33 @@ electron beam current & 1 pA to 200 mA
 \node at (12,3.8){
 \Huge\color{hzbblue} MLS
 };
-\draw [<-, rounded corners, thick, black] (11,6.5) -- (12.5,6.4);
+\draw [<-, rounded corners, thick, black] (10.8,6.5) -- (12.5,6.4);
 \node at (14,6.4) {
 beamline used
 };
-\node at (16, 0.4){\includegraphics[width=50pt]{Pics/PTB-Logo.pdf}};
+\node at (16, 0){\includegraphics[width=75pt]{Pics/PTB-Logo.pdf}};
 \end{tikzpicture}
 }
 
-\headerbox{Setup}{name=firstbox,below=introbox,column=0,row=1,span=2}
-{\\
+\headerbox{Streak Camera Setup}{name=firstbox,below=introbox,column=0,row=1,span=2}
+{
 \begin{tikzpicture}
 
-\node at (1,0) {\includegraphics[width=350pt]{Pics/diagramtext.pdf}
+\node at (1,0.8) {\includegraphics[width=300pt]{Pics/diagramtext.pdf}
 };
-\node at (8.7,0) {\fbox{\includegraphics[width=75pt]{Pics/verticalbeam.pdf}}
+\node at (8.7,1) {\fbox{\includegraphics[width=90pt]{Pics/verticalbeam.pdf}}
 };
-\node at (6,-5.2) {\fbox{\includegraphics[width=150pt]{Pics/horizontaltable.pdf}}
+\node at (6,-4.8) {\fbox{\includegraphics[width=175pt]{Pics/horizontaltable.pdf}}
 };
-\node at (6,-3.3) {
-optical table setup for dual streak camera operation
+\node at (6,-2.7) {
+dual streak camera operation
 };
-\node at (8.7,2.7) {
+\node at (8.7,-2.15) {
 support beam
 };
-\node at (-1,-5) {
+\node at (-1,-4) {
 \begin{varwidth}{7cm}
-The toroidal mirrors, along with a splitter and a normal mirror, on the optical table are placed on rail systems in order to provide multiple degrees of freedom to adjust for the horizontal and vertical focuses of the beam
+The toroidal mirrors, along with a splitter and a plane mirror, on the optical table are placed on rail systems in order to provide multiple degrees of freedom to adjust for the horizontal and vertical focuses of the beam
 \end{varwidth}
 };
 \end{tikzpicture}
