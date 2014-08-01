@@ -126,41 +126,55 @@ The toroidal mirrors, along with a splitter and a plane mirror, on the optical t
 \end{tikzpicture}
 }
 
-\headerbox{Measurements}{name=secondbox,below=firstbox,column=0,row=2,span=2,above=bottom}
+\headerbox{Streak Camera Measurements}{name=secondbox,below=firstbox,column=0,row=2,span=2,above=bottom}
 {
 \begin{tikzpicture}[]
 
 
-\node at (0,4) {\includegraphics[height=175pt]{IP/levon/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf}
+\node at (0,4.3) {\includegraphics[height=175pt]{IP/levon/lowalpha_100mA_zerisseneFuellungmitLuecke.pdf}
 };
-\node at (0,4) {\includegraphics[height=175pt]{IP/levon/lowalpha_100mA_zerisseneFuellungmitLueckegraph.pdf}
+\node at (0,4.3) {\includegraphics[height=175pt]{IP/levon/lowalpha_100mA_zerisseneFuellungmitLueckegraph.pdf}
 };
-\node at (7,4) {\includegraphics[height=175pt]{IP/levon/lowalpha_1uA.pdf}
+\node at (7,4.3) {\includegraphics[height=175pt]{IP/levon/lowalpha_1uA.pdf}
 };
-\node at (7,4) {\includegraphics[height=175pt]{IP/levon/lowalpha_1uAgraph.pdf}
+\node at (7,4.3) {\includegraphics[height=175pt]{IP/levon/lowalpha_1uAgraph.pdf}
 };
-\node at (0,6.7) {
+\node at (0,1) {
 \large horizontal bunch length
 };
-\node at (7,6.7) {
+\node at (7,1) {
 \large single bunch measurement
 };
-\draw[<-,thick] (-3,3) to [out=-90,in=180] (-1.4,0.5);
-\draw[<-,thick] (1.35,3) to [out=-90,in=0] (1.4,0.5);
-\node at (0,0.5) { \large one revolution
+\draw[<-,thick] (-2.95,5) to [out=90,in=180] (-2.5,7);
+\draw[<-,thick] (1.55,5) to [out=90,in=0] (0.4,7);
+\node at (-1,7) { \large one revolution
 };
-\draw [->, rounded corners, thick, black] (6.5,1) -- (6.9,3);
-\node at (6.5,0.2) {
-\begin{varwidth}{4cm}
+\draw [->, rounded corners, thick, black] (10,7) -- (7,3.5);
+\node at (9.5,7.9) {
+\begin{varwidth}{3.5cm}
 possibly a reflection from inside the camera back onto the fluorescent screen
 \end{varwidth}
 };
+\node at (3,8) {\includegraphics[width=250pt]{Pics/streakdiagram.pdf}};
 \end{tikzpicture}
+\node at (1,8) {\fbox{\includegraphics[width=50pt]{Pics/beam.jpg}}};
+\draw [<-, rounded corners, thick, black] (2.2,8) -- (3.3,8.3);
+\node at (3,8.5) {
+image of beam
+};
 }
 
 \headerbox{Tune Resonance Program}{name=tunediag,below=introbox,column=2,row=1,span=1,above=bottom}
 {
 {\color{hzbblue}\bf\large Details \& Features}
+\begin{center}
+\large Third order structural and phase advance resonance lines for the MLS
+\includegraphics[width=200pt]{Pics/image.pdf}
+\large Fifth order difference resonance lines ordered by color
+\includegraphics[width=200pt]{Pics/image2.pdf}
+\end{center}
+
+{\color{hzbblue}\bf\large Pictures \& Examples}
 \begin{itemize}
 
 \item[\color{hzbblue}\textbullet] developed in python
@@ -171,14 +185,6 @@ possibly a reflection from inside the camera back onto the fluorescent screen
 \item[\color{hzbblue}\textbullet] various customizability options available
 
 \end{itemize}
-{\color{hzbblue}\bf\large Pictures \& Examples}
-\begin{center}
-\large Third order structural and phase advance resonance lines for the MLS
-\includegraphics[width=200pt]{Pics/image.pdf}
-\large Fifth order difference resonance lines ordered by color
-\includegraphics[width=200pt]{Pics/image2.pdf}
-\end{center}
-
 }
 \end{poster}
 \end{document}
