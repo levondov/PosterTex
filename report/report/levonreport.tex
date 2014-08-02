@@ -1,10 +1,3 @@
-%% ****** Start of file auguide.tex ****** %
-%%
-%%   This file is part of the AIP distribution of substyles for REVTeX 4.1
-%%   For version 4.1r of REVTeX, August 2010
-%%
-%%   Copyright (c) 2009,2010 American Institute of Physics
-%%
 \listfiles
 \documentclass[%
  reprint,%
@@ -17,6 +10,8 @@
 
 \usepackage{docs}%
 \usepackage{bm}%
+\usepackage{mathtools}
+\usepackage{graphicx}
 \usepackage[colorlinks=true,linkcolor=blue]{hyperref}%
 %\nofiles
 \expandafter\ifx\csname package@font\endcsname\relax\else
@@ -29,9 +24,9 @@
 
 \begin{document}
 
-\title{Streak Camera Systems and Tune Resonance Tools at HZB}%
+\title{Streak Camera System and Tune Resonance Tool}%
 
-\author{Levon Dovlatyan, Markus Ries, Paul Goslawski, and friends at HZB}%
+\author{L. Dovlatyan, M. Ries, P. Goslawski, and friends at HZB}%
 \email{levondov@berkeley.edu}
 \affiliation{University of California Berkeley,94720 Berkeley, CA, USA}%
 
@@ -48,20 +43,36 @@ The Helmholtz-Zentrum Berlin is a facility that operates two synchrotron light s
 
 Another way of looking into bunch lengths at HZB is through diagnostic tools. A new streak camera was recently purchased for the MLS, and is currently being setup and tested. The Metrology Light Source (MLS) is an electron storage ring designed as a dedicated UV and VUV source; it has an asymmetric double-bend achromate design as well as six beamlines, two of which are located on a second floor, above the synchrotron. Both the new and the old streak cameras are setup with a UV beamline on the second floor, directly above the machine. Being on the second floor and having the cameras setup far away from the beamline required advanced optical paths in order to get a focused beam into the slit of the cameras.
 
-\section{Tune Resonance Program}
+\section{Tune Resonance Program\cite{Note1}}
 
+The program is based on simple principle...
+\begin{equation}
+ m*Q_x + n*Q_y = p
+\end{equation}
+The program features a very helpful GUI jfosf ksof o kos fkosf okf okf okfsoksf oksf oks
+\begin{center}
+\fbox{\includegraphics[width=150pt]{main.png}}
+\end{center}
+Continue with stuff and things blah blah blah blah blha blah blah
 \subsection{Developement}
-The program was written in Python. This provided the opportunity to integrate with EPICS (Experimental Physics and Industrial Control System) through a special python package called PyEpics and build a GUI system using wxPython to make the program simple to use. Much of the program also relies heavily on numpy and matplotlib packages available for Python.
+The program is written in Python and completely open source. This provided the opportunity to integrate with EPICS (Experimental Physics and Industrial Control System) through a special python package called PyEpics and build a GUI system using wxPython to make the program simple to use. Much of the program also relies heavily on numpy and matplotlib packages available for Python.
 
-The biggest feature of the program is a 'live mode' option that is able to give the current tune position numerically and graphically. Using the proper epics channels, the program is able to grab the four values it needs to calculate the non integer tune: the RF cavity frequency, the harmonic number, and the horizontal and vertical betatron oscillation frequencies. The program can check and update the tune several times a second, but in order to have the visual display updated, a threading process was used to avoid having the GUI freeze up while in live mode. The threading process is able to do all the processing and updating of the matplotlib graph, continously updating the point on the graph.
-
-
+The biggest feature of the program is a 'live mode' option that is able to give the current tune position numerically and graphically. Using the proper epics channels, the program is able to grab the four values it needs to calculate the non integer tune: the RF cavity frequency, the harmonic number, and the horizontal and vertical betatron oscillation frequencies. The program can check and update the tune several times a second, but in order to have the visual display updated, a threading process was used to avoid having the GUI freeze up while in live mode. The threading process is able to do all the processing and updating of the matplotlib graph, continously updating the working point on the plot.
 
 \subsection{Customizability}
+Various customizability options are available for the program. Changing color settings, removing certain resonance lines, and adjusting for mirrored tunes are just some features available for the user. Being able to display phase advance resonance lines is another unique feature included in the program.
+
+Aside from accelerators having to position their working points away from resonane lines, they must also consider the phase advanced resonance lines as these are much more powerful and dangerous to approach with a working point. Given the number of unit cells for the machine, the program is able to display a tune diagram with the phase advance resonance lines along with the working points. This feature can complement the live mode option available with the program. If an operator wants to move the working point and cross resonance lines, the program can be used as a visual guide in order to avoid the phase advanced resonance lines (colored in red in figure 1) which will more than likely kill the beam.
+\begin{center}
+\includegraphics[width=200pt]{image.pdf}
+\end{center}
+Figure 1: Tune resonance diagram displaying phase advance lines (4 unit cells) for the MLS
 
 \subsection{Future Improvements}
+The program's availability on github allows for updates and improvements to be quickly added at the request of users.
 
-\section{\revtex\ Class Options Specific to AIP}
+
+\section{Streak Camera}
 
 \subsection{Journal Substyle}
 To access particular features of the AIP substyle, you will specify an additional document class option: the journal substyle, e.g.,
@@ -154,115 +165,11 @@ journal emulation&\texttt{reprint}\\
 \footnotetext[3]{Only allowed for \textit{Chaos} or \textit{J. Math. Phys.}}%
 \end{table}
 
-\section{Useful \LaTeXe\ Markup}
-\LaTeXe\ markup is the preferred way to structure your file. 
-In general, the use of low-level commands like \TeX\ primitives or Plain \TeX\ macros 
-is less preferable. 
-Please see the \revtex\ User's Guide,\cite{Note2} 
-the \LaTeX\ manual,\cite{LaTeXman} 
-and the \LaTeXe\ book\cite{Compan} 
-for further details. 
 
-\subsection{Title and Front Matter}\label{sec:front}
-
-The \revtex\ User's Guide has complete information on using \revtex's special markup for your
-article's title, author list, abstract, and other front matter elements. 
-Note that class option \texttt{superscriptaddress} is the default for the AIP substyles, 
-as required by all AIP journals. 
-
-\subsection{Lead Paragraph}
-One AIP journal, \textit{Chaos}, requires a paragraph of text to precede the first
-\cmd\section\ of the article; 
-this is known as a lead paragraph and is formatted boldface. 
-To give your article a lead paragraph, 
-include a quotation environment ahead of the first \cmd\section\ command:
-\begin{verbatim}
-\documentclass[aip]{revtex4-1}
-\begin{document}
- \begin{quotation}
-  Here is my lead paragraph!
- \end{quotation}
- \section{Introduction}
-...
-\end{verbatim}
-
-The \texttt{quotation} environment functions normally after the first \cmd\section\ command in the document.
-
-\section{Body}
-
-For general information on commands used in the body of the document, see the \revtex\ User's Guide.
-Herein are some features specific to the AIP author.
-
-\subsection{Footnotes}
-
-If you are using numbered citations (numerical or numbered author-year), 
-footnotes are by default incorporated into the reference section 
-along with your bibliographic entries. 
-This automated feature is only effective if you use Bib\TeX\ to prepare your
-bibliography. 
-
-Author-year style bibliography does not lend itself to such a treatment, 
-so by default footnotes appear in text as is usual. 
-However, be advised that, if your article is accepted for publication,
-footnotes may be incorporated into text during the production process.
-
-\section{Citations and References}\label{sec:endnotes}
-
-The preparation of your bibliography ``by hand'' is possible; 
-however, if you do so, 
-you will be entirely responsible 
-for compliance with submission requirements for your bibliographic entries, 
-for incorporating any text footnotes into the references, 
-and for checking bibliographic entries. 
-(In this connection, you may find useful the file \texttt{reftest.tex}, distributed with \revtex.)
-
-There are numerous reasons to use Bib\TeX, not least because it automates the first and second of the above checks. 
-
-\subsection{\label{sec:use-bib}Using Bib\protect\TeX}
-
-Refer to the \revtex\ User's Guide, the \LaTeX\ manual, and the Bib\TeX\ manual
-for full information about using Bib\TeX. 
-
-When using Bib\TeX\, keep in mind that changing your bibliography style or citation style
-(via the document class options described above) will require you to rerun Bib\TeX.
-The standard litany (using \texttt{aipsamp.tex} as an example) for this is:
-\begin{verbatim}
-> latex aipsamp
-> bibtex aipsamp
-> latex aipsamp
-> latex aipsamp
-\end{verbatim}
-Here, the first invocation of \texttt{latex} has the effect of rewriting the
-\texttt{aipsamp.aux} file,
-and the invocation of \texttt{bibtex} creates a new \texttt{aipsamp.bbl} file. 
-The next two runs of \texttt{latex} are then required: 
-the first to update the \texttt{aipsamp.aux} file reflecting the new values of your citations
-and the second to employ those citations correctly. 
-Be sure to check the end of the \texttt{aipsamp.log} file for any message advising you to 
-rerun \texttt{latex}. 
-
-\subsection{Multiple References per Citation}
-In an article using numerical citations, 
-it is not uncommon to encounter the need for a citation 
-that refers to more than one article or other reference. 
-To accommodate such a case, \revtex~4.1 implements markup similar to that of the 
-\texttt{mcite} package for \LaTeXe. 
-
-Let's say that two citation keys \texttt{able} and \texttt{baker} 
-need to be combined into a single reference.
-The syntax for the \cmd\cite\ command is:
-\begin{verbatim}
-word\cite{able,*baker} further text
-\end{verbatim}
-When you run Bib\TeX\, the resulting bibliography will contain the two entries, but run together
-as a single numbered reference.
-In the \cmd\cite\ command argument, any cite key that starts with the * character
-signifies that its bibliographic entry is to be joined together with the one preceding it;
-the \texttt{*} may join together any number of entries into a single reference.
 
 \begin{thebibliography}{9}\label{sec:TeXbooks}%
 \bibitem{Note1}
-For help regarding the installation of this software and its use, please send email to \href{mailto:tex@aip.org}{tex@aip.org}.
+Source code can be found on the following github page: \url{https://github.com/levondov/TuneResonancePython}.
 %
 \bibitem{Note2}
 Available with the \revtex\ distribution, see \url{http://authors.aps.org/revtex4/}.

@@ -1,21 +1,13 @@
-\contentsline {title}{Streak Camera Systems and Tune Resonance Tools at HZB}{1}{section*.1}
+\contentsline {title}{Streak Camera System and Tune Resonance Tool}{1}{section*.1}
 \tocdepth@munge 
 \contentsline {section}{\numberline {}Contents}{1}{section*.2}
 \tocdepth@restore 
 \contentsline {section}{\numberline {I}Introduction}{1}{section*.3}
-\contentsline {section}{\numberline {II}Tune Resonance Program}{1}{section*.4}
+\contentsline {section}{\numberline {II}Tune Resonance Program\cite {Note1}}{1}{section*.4}
 \contentsline {subsection}{\numberline {A}Developement}{1}{section*.5}
-\contentsline {subsection}{\numberline {B}Customizability}{1}{section*.6}
-\contentsline {subsection}{\numberline {C}Future Improvements}{1}{section*.7}
-\contentsline {section}{\numberline {III}\revtex \ Class Options Specific to AIP}{1}{section*.8}
-\contentsline {subsection}{\numberline {A}Journal Substyle}{1}{section*.9}
+\contentsline {subsection}{\numberline {B}Customizability}{2}{section*.6}
+\contentsline {subsection}{\numberline {C}Future Improvements}{2}{section*.7}
+\contentsline {section}{\numberline {III}Streak Camera}{2}{section*.8}
+\contentsline {subsection}{\numberline {A}Journal Substyle}{2}{section*.9}
 \contentsline {subsection}{\numberline {B}Options for Citations and Bibliography}{2}{section*.10}
 \contentsline {subsection}{\numberline {C}Formatting Options}{2}{section*.11}
-\contentsline {section}{\numberline {IV}Useful \LaTeXe \ Markup}{2}{section*.12}
-\contentsline {subsection}{\numberline {A}Title and Front Matter}{2}{section*.13}
-\contentsline {subsection}{\numberline {B}Lead Paragraph}{2}{section*.14}
-\contentsline {section}{\numberline {V}Body}{3}{section*.15}
-\contentsline {subsection}{\numberline {A}Footnotes}{3}{section*.16}
-\contentsline {section}{\numberline {VI}Citations and References}{3}{section*.17}
-\contentsline {subsection}{\numberline {A}Using Bib\TeX }{3}{section*.18}
-\contentsline {subsection}{\numberline {B}Multiple References per Citation}{3}{section*.19}
