@@ -8,6 +8,7 @@
 \contentsline {subsection}{\numberline {B}Customizability}{2}{section*.6}
 \contentsline {subsection}{\numberline {C}Future Improvements}{2}{section*.7}
 \contentsline {section}{\numberline {III}Streak Camera}{2}{section*.8}
-\contentsline {subsection}{\numberline {A}Journal Substyle}{2}{section*.9}
-\contentsline {subsection}{\numberline {B}Options for Citations and Bibliography}{2}{section*.10}
-\contentsline {subsection}{\numberline {C}Formatting Options}{2}{section*.11}
+\contentsline {subsection}{\numberline {A}Setup}{2}{section*.9}
+\contentsline {subsection}{\numberline {B}Operation}{3}{section*.10}
+\contentsline {subsection}{\numberline {C}Problems for the Future}{3}{section*.11}
+\contentsline {section}{\numberline {IV}Conclusion}{4}{section*.12}

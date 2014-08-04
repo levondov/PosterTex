@@ -41,7 +41,7 @@
 
 The Helmholtz-Zentrum Berlin is a facility that operates two synchrotron light sources: BESSY II and the MLS. One of the long term goals of this center is to continually make bunch lengths as short as possible in storage rings. A way to go about this is through lattice design by changing the momentum compaction factor. An important part of lattice design involves picking a good working point to avoid the tune resonances of the machine. A tune resonance program was therefore developed which can be used to view the current working point and resonance lines given only a few input parameters from the EPICS control systems.
 
-Another way of looking into bunch lengths at HZB is through diagnostic tools. A new streak camera was recently purchased for the MLS, and is currently being setup and tested. The Metrology Light Source (MLS) is an electron storage ring designed as a dedicated UV and VUV source; it has an asymmetric double-bend achromate design as well as six beamlines, two of which are located on a second floor, above the synchrotron. Both the new and the old streak cameras are setup with a UV beamline on the second floor, directly above the machine. Being on the second floor and having the cameras setup far away from the beamline required advanced optical paths in order to get a focused beam into the slit of the cameras.
+Another way of looking into bunch lengths at HZB is through diagnostic tools. A new streak camera was recently purchased for the MLS, and is currently being setup and tested. The Metrology Light Source (MLS) is an electron storage ring designed as a dedicated UV and VUV source; it has an asymmetric double-bend achromate design as well as six beamlines, two of which are located on a second floor, above the synchrotron. Both the new and the old streak cameras are setup with a UV beamline on the second floor, directly above the machine. Being on the second floor and having the cameras setup far away from the beamline required advanced optical paths in order to get a focused beam into the slits of the cameras.
 
 \section{Tune Resonance Program\cite{Note1}}
 
@@ -66,23 +66,37 @@ Aside from accelerators having to position their working points away from resona
 \begin{center}
 \includegraphics[width=200pt]{image.pdf}
 \end{center}
-Figure 1: Tune resonance diagram displaying phase advance lines (4 unit cells) for the MLS
+Figure 2: Tune resonance diagram displaying phase advance lines (4 unit cells) for the MLS
 
 \subsection{Future Improvements}
-The program's availability on github allows for updates and improvements to be quickly added at the request of users.
+The program's availability on github\cite{Note1} allows for updates and improvements to be added in the future. Because of a lack of time, some improvements and features will be added at a later date. One of these improvements is the amount of CPU power the program uses when running in live mode. The problem stems from the matplotlib package having to constantly update the graph/plot several times a second; this process ends up consuming a lot of CPU power and eventually slows down the program significantly. Aside from this, there are minor improvements that will be added in occasionally depending on the amount of free time available.
 
 
 \section{Streak Camera}
+A streak camera is a device used to take pictures of very fast light phenomena. The resulting images however are not like that of a typical camera, but instead are given in a plot of intensity vs time vs position.
+\includegraphics[width=250pt]{streakdiagram.pdf}
+Figure 3: Streak camera operational principals\cite{Note2}. \\
 
-\subsection{Journal Substyle}
-To access particular features of the AIP substyle, you will specify an additional document class option: the journal substyle, e.g.,
-\begin{verbatim}
-\documentclass[aip,jcp]{revtex4-1}
-\end{verbatim}
-in this case, \textit{J. Chem. Phys.}, the default. 
-A complete list of AIP journals with the corresponding journal substyle appears in Table~\ref{tab:journals}.
+How the camera actually works is illustrated in figure 3. Radiation enters the camera's slit as photons with varying intensity emitted from the electrons in the beam; it then goes through some lens before hitting a photocathode. The photocathode converts the photons into a certain number of electrons proportional to the intensity of the light. The accelerating mesh then accelerates the electrons towards the phosphor screen. The electrons then go through a sweeping electric field that deflects them at slightly different angles vertically depending on the arrival time of the electrons. The micro channel plate then multiplies the electrons several thousand times in order for their impact on the phosphor screen to be detectable. Finally, the electrons hit the phosphor screen and are transformed back into photons; their positions on the screen depend on their arrival time at the sweeping electrode. The earliest electrons are deflected to the top of the screen and the latest electrons are at the bottom of the screen; this turns the vertical axis into a time axis and allows the measuring of the bunch length for the beam either with FWHM or sigma.
 
-\subsection{Options for Citations and Bibliography}
+\subsection{Setup}
+The setup of the streak cameras proved to be quite a challenge. The cameras had to be on top of a specific optical table that was positioned behind and above the beamline; this required an optical path that would provide six degrees of freedom.
+\includegraphics[width=250pt]{diagramtext.pdf}
+Figure 4: Rough diagram of stream camera setup \\
+
+The very first thing done when setting up the optical paths was to align a helium neon laser with the beam using a splitter. Beamtime is expensive and not always available, but having a laser that is perfectly aligned with the beam allowed us to continue setting up the optical paths using the laser instead of the beam. The first piece along the optical path is a bandpass filter lens which allows wavelengths between xxx and xxx nm; this is also the wavelength range of the laser. However, in order to have the synchrotron and undulator radiation pass through this filter, the undulator gap must be manually moved which shifts the peaks in figure 5 into the range of our filter. Next we pass through an aperture that is used to help focus the beam before finally hitting a plane mirror at the top of our vertical beam.
+\begin{center}
+\fbox{\includegraphics[width=150pt]{verticalbeam.pdf}}
+\end{center}
+\begin{center}
+Figure 6: Vertical beam setup
+\end{center}
+
+The next thing we did is setup the horizontal optical table that went directly into the two new streak cameras
+
+
+
+\subsection{Operation}
 The citation style for AIP journals is:
 \begin{itemize}
 \item 
@@ -127,7 +141,7 @@ give the author-numerical option:
 Note that the \texttt{author-numerical} option is not part of standard \revtex\, so use of it
 outside of the AIP substyles may not have any effect. 
 
-\subsection{Formatting Options}
+\subsection{Problems for the Future}
 There are two commonly used formats for an article you may write. 
 One will comply with the manuscript submission formatting requirements of the editorial office of the journal you are submitting to.
 The other will emulate the format of your article in the published journal itself. 
@@ -145,6 +159,10 @@ the length of the article will not represent an accurate estimate.
 Other details may also differ. 
 
 A summary of class options of interest to AIP authors appears in Table~\ref{tab:options}.
+
+\section{Conclusion}
+test test test
+
 \begin{table}
 \caption{\label{tab:options}Other class options}
 \begin{ruledtabular}
@@ -172,7 +190,10 @@ journal emulation&\texttt{reprint}\\
 Source code can be found on the following github page: \url{https://github.com/levondov/TuneResonancePython}.
 %
 \bibitem{Note2}
-Available with the \revtex\ distribution, see \url{http://authors.aps.org/revtex4/}.
+Hamamatsu,
+\emph{Guide to Streak Cameras}
+(HAMAMATSU PHOTONICS K.K., Hamamatsu City, Japan, 2008)
+\url{http://www.hamamatsu.com/resources/pdf/sys/e_streakh.pdf}.
 %
 \bibitem[Lamport(1996)]{LaTeXman} 
 L. Lamport, 
