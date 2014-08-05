@@ -12,6 +12,7 @@
 \usepackage{bm}%
 \usepackage{mathtools}
 \usepackage{graphicx}
+\usepackage{tikz}
 \usepackage[colorlinks=true,linkcolor=blue]{hyperref}%
 %\nofiles
 \expandafter\ifx\csname package@font\endcsname\relax\else
@@ -45,15 +46,11 @@ Another way of looking into bunch lengths at HZB is through diagnostic tools. A 
 
 \section{Tune Resonance Program\cite{Note1}}
 
-The program is based on simple principle...
+The program is based on the principal of optical resonances. The main equation that is used for plotting the resonances is
 \begin{equation}
  m*Q_x + n*Q_y = p
 \end{equation}
-The program features a very helpful GUI jfosf ksof o kos fkosf okf okf okfsoksf oksf oks
-\begin{center}
-\fbox{\includegraphics[width=150pt]{main.png}}
-\end{center}
-Continue with stuff and things blah blah blah blah blha blah blah
+Where m,n, and p are integer values. The sum of $ |m| + |n| $ is called the order of the resonances. For stable operation $Q_x$ and $Q_y$ must be chosen to be far away from any optical resonances. This program provides a visual guide to help with this through a usual GUI.
 \subsection{Developement}
 The program is written in Python and completely open source. This provided the opportunity to integrate with EPICS (Experimental Physics and Industrial Control System) through a special python package called PyEpics and build a GUI system using wxPython to make the program simple to use. Much of the program also relies heavily on numpy and matplotlib packages available for Python.
 
@@ -63,14 +60,15 @@ The biggest feature of the program is a 'live mode' option that is able to give 
 Various customizability options are available for the program. Changing color settings, removing certain resonance lines, and adjusting for mirrored tunes are just some features available for the user. Being able to display phase advance resonance lines is another unique feature included in the program.
 
 Aside from accelerators having to position their working points away from resonane lines, they must also consider the phase advanced resonance lines as these are much more powerful and dangerous to approach with a working point. Given the number of unit cells for the machine, the program is able to display a tune diagram with the phase advance resonance lines along with the working points. This feature can complement the live mode option available with the program. If an operator wants to move the working point and cross resonance lines, the program can be used as a visual guide in order to avoid the phase advanced resonance lines (colored in red in figure 1) which will more than likely kill the beam.
+\begin{figure}
 \begin{center}
 \includegraphics[width=200pt]{image.pdf}
 \end{center}
+\end{figure}
 Figure 2: Tune resonance diagram displaying phase advance lines (4 unit cells) for the MLS
 
 \subsection{Future Improvements}
 The program's availability on github\cite{Note1} allows for updates and improvements to be added in the future. Because of a lack of time, some improvements and features will be added at a later date. One of these improvements is the amount of CPU power the program uses when running in live mode. The problem stems from the matplotlib package having to constantly update the graph/plot several times a second; this process ends up consuming a lot of CPU power and eventually slows down the program significantly. Aside from this, there are minor improvements that will be added in occasionally depending on the amount of free time available.
-
 
 \section{Streak Camera}
 A streak camera is a device used to take pictures of very fast light phenomena. The resulting images however are not like that of a typical camera, but instead are given in a plot of intensity vs time vs position.
@@ -79,115 +77,64 @@ Figure 3: Streak camera operational principals\cite{Note2}. \\
 
 How the camera actually works is illustrated in figure 3. Radiation enters the camera's slit as photons with varying intensity emitted from the electrons in the beam; it then goes through some lens before hitting a photocathode. The photocathode converts the photons into a certain number of electrons proportional to the intensity of the light. The accelerating mesh then accelerates the electrons towards the phosphor screen. The electrons then go through a sweeping electric field that deflects them at slightly different angles vertically depending on the arrival time of the electrons. The micro channel plate then multiplies the electrons several thousand times in order for their impact on the phosphor screen to be detectable. Finally, the electrons hit the phosphor screen and are transformed back into photons; their positions on the screen depend on their arrival time at the sweeping electrode. The earliest electrons are deflected to the top of the screen and the latest electrons are at the bottom of the screen; this turns the vertical axis into a time axis and allows the measuring of the bunch length for the beam either with FWHM or sigma.
 
-\subsection{Setup}
+\subsection{Setup\cite{Note3}}
 The setup of the streak cameras proved to be quite a challenge. The cameras had to be on top of a specific optical table that was positioned behind and above the beamline; this required an optical path that would provide six degrees of freedom.
 \includegraphics[width=250pt]{diagramtext.pdf}
 Figure 4: Rough diagram of stream camera setup \\
-
-The very first thing done when setting up the optical paths was to align a helium neon laser with the beam using a splitter. Beamtime is expensive and not always available, but having a laser that is perfectly aligned with the beam allowed us to continue setting up the optical paths using the laser instead of the beam. The first piece along the optical path is a bandpass filter lens which allows wavelengths between xxx and xxx nm; this is also the wavelength range of the laser. However, in order to have the synchrotron and undulator radiation pass through this filter, the undulator gap must be manually moved which shifts the peaks in figure 5 into the range of our filter. Next we pass through an aperture that is used to help focus the beam before finally hitting a plane mirror at the top of our vertical beam.
+\begin{figure}
 \begin{center}
-\fbox{\includegraphics[width=150pt]{verticalbeam.pdf}}
+\includegraphics[width=200pt]{uplot.pdf} \\
+Figure 5: Undulator Radiation from U125 at the MLS
 \end{center}
+\end{figure}
+The very first thing done when setting up the optical paths was to align a helium neon laser with the beam using a splitter. Beamtime is expensive and not always available, but having a laser that is perfectly aligned with the beam allowed us to continue setting up the optical paths using the laser instead of the beam. The first piece along the optical path is a bandpass filter lens which allows wavelengths between 630 and 640 nm; this is also the wavelength range of the laser. However, in order to have the synchrotron and undulator radiation pass through this filter, the undulator gap must be optimized by shifting the intensities to fit in the range of our filter. Figure 5 shows a plot of the undulator radiation for the undulator at the MLS (U125). Next we pass through an aperture that is used to help focus the beam before finally hitting a plane mirror at the top of our vertical beam.
+
+Looking at the coherence condition for undulator radiation, 
+\begin{equation}
+\lambda_w = \frac{\lambda_u}{2\gamma^2} (1 + \frac{K^2}{2} + \gamma^2\Theta_0^2)
+\end{equation}
+there are a few options available for shifting the wavelengths of the radiation. The undulator parameter K,
+\begin{equation}
+K = \frac{e B \lambda_u}{2\pi m_e c}
+\end{equation}
+was manipulated by changing the on axis magnetic field for the undulator.
+
+The next thing we did is setup the horizontal optical table. An ideal setup that allowed dual streak camera operation was constructed. Continuing with the beam path after the vertical beam, we pass through a few plane mirrors before hitting another filter. The new streak camera's cathode was a lot more sensitive than the old camera's, and as a result, the beam's intensity needed to be lowered in order to avoid burning out the cathode; this was accomplished with a filter wheel placed along the optical path which can be easily adjusted to find the right intensity. 
+
+After the filter wheel, the last part of the optical path is reached. A splitter and plane mirror are used to split and redirect the beam in two different directions. One path continues to the new streak camera while another splits off and heads towards the old camera. Finally, a pair of toroidal mirrors placed right before both cameras are used to focus the beam into the slits of both cameras.
 \begin{center}
-Figure 6: Vertical beam setup
+\fbox{\includegraphics[width=175pt]{horizontaltable.pdf}} \\[0.5cm]
+Figure 7: Horizontal optical table setup
 \end{center}
-
-The next thing we did is setup the horizontal optical table that went directly into the two new streak cameras
-
-
 
 \subsection{Operation}
-The citation style for AIP journals is:
-\begin{itemize}
-\item 
-numerical (default style), 
-\item
-author-year, and
-\item
-numerical author-year,
-\end{itemize}
-the latter two styles being only allowed for \textit{Chaos} or \textit{J. Math. Phys.}
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}
+\node at (0,0) {\includegraphics[width=250pt]{lowalpha_1uA.pdf}};
+\node at (0,0) {\includegraphics[width=250pt]{lowalpha_1uAgraph.pdf}};
+\end{tikzpicture}
+Figure 6: single bunch measurement in low alpha mode at the MLS
+\end{center}
+\end{figure}
 
-The familiar numerical citations and numbered bibliography are the default for most journals: 
-citations are superscript numbers, and the (numbered) bibliographic entries appear in the order cited. 
+Initial measurements with the new streak were taken at the MLS\cite{Note4}. A single bunch measurement is shown in figure 6 along with an intensity vs time plot. Fitting a normal gaussian to the plot and finding a corresponding sigma value can give us the electron bunch length.
 
-Author-year citations are only allowed for 
-\textit{Chaos} or \textit{J. Math. Phys.}, with citations given in author-and-year format. 
-Bibliographic entries are sorted by alphabetical order of first author's surname, then by year. 
+\subsection{Future Improvements}
+There is still much to be done with the streak camera. One major problem that was not fully resolved is getting both vertical and horizontal focal points of the beam into the streak camera pin hole. Because the beamline is on the second floor, at some point a mirror was used to deflect the beam upstairs; this mirror caused the horizontal and vertical focal points of the beam to diverge from each other. The focal points are a few centimeters apart which causes problems when trying to get the beam aligned properly. Two options are available to try and fix this problem. A custom toroidal like mirror can be ordered that can focus both beams back into one spot, or two normal toroidal mirrors positioned right after each other can be used to align the focal points correctly. The latter seems like a much more reasonable solution to the problem.
 
-Numerical author-year citations 
-(only allowed for \textit{Chaos} or \textit{J. Math. Phys.}) 
-are superscript numbers, just like numerical citations, 
-but the bibliographic entries are sorted like the author-year entries and are numbered. 
-This means that the first citation will not necessarily be~1.
+Having a lab view system to control all the values and parameters from the steak camera software would also be a much needed improvement. Along with this lab view system, one can put in safety measures to help prevent the camera from breaking. Because the camera is so sensitive to the beam and can easily have its cathode burned, a remote program controlling the filter and shutter systems will help prevent any expensive accidents from occuring.
 
-To obtain the numerical style, simply accept the default, or supply a class option of \texttt{numerical}:
-\begin{verbatim}
-\documentclass[aip,numerical]{revtex4-1}
-\end{verbatim}
-For author-year citations for \textit{Chaos} or \textit{J. Math. Phys.}, 
-you may specify the \texttt{author-year} option:
-\begin{verbatim}
-\documentclass[aip,author-year]{revtex4-1}
-\end{verbatim}
-Each of the above two options are part of standard \revtex.
+\section{Conclusion and acknowledgements}
+Both the tune resonance program and the steak camera setup ended up teaching me a tremendous amount not only in the field of accelerator physics, but also in optical path designs, programming with python and related packages, and learning about poster design with LaTex. The tune resonance program will continue to be supported and updated by me as much as time allows and at the request of others.
 
-To obtain numerical author-year citations 
-for \textit{Chaos} or \textit{J. Math. Phys.}, 
-give the author-numerical option:
-\begin{verbatim}
-\documentclass[aip,author-numerical]{revtex4-1}
-\end{verbatim}
-Note that the \texttt{author-numerical} option is not part of standard \revtex\, so use of it
-outside of the AIP substyles may not have any effect. 
-
-\subsection{Problems for the Future}
-There are two commonly used formats for an article you may write. 
-One will comply with the manuscript submission formatting requirements of the editorial office of the journal you are submitting to.
-The other will emulate the format of your article in the published journal itself. 
-
-For journal submission, accept the default, or you may specify the \texttt{preprint} option:
-\begin{verbatim}
-\documentclass[aip,preprint]{revtex4-1}
-\end{verbatim}
-To emulate the formatting of the journal, specify the \texttt{reprint} option:
-\begin{verbatim}
-\documentclass[aip,reprint]{revtex4-1}
-\end{verbatim}
-Note that emulation is not by any means complete: the fonts used will differ, and therefore
-the length of the article will not represent an accurate estimate. 
-Other details may also differ. 
-
-A summary of class options of interest to AIP authors appears in Table~\ref{tab:options}.
-
-\section{Conclusion}
-test test test
-
-\begin{table}
-\caption{\label{tab:options}Other class options}
-\begin{ruledtabular}
-\begin{tabular}{ll}
-\textbf{Function} & \textbf{class option} \\
-\multicolumn{2}{l}{\textit{Citation and References}}\\
-superscript numbered&\texttt{numerical}\footnotemark[1]\textsuperscript{,}\footnotemark[2]\\
-author-year&\texttt{author-year}\footnotemark[3]\\
-numbered author-year&\texttt{author-numerical}\footnotemark[3]\\
-%
-\multicolumn{2}{l}{\textit{Format}}\\
-journal submission&\texttt{preprint}\footnotemark[1]\\
-journal emulation&\texttt{reprint}\\
-\end{tabular}
-\end{ruledtabular}
-\footnotetext[1]{Default option.}%
-\footnotetext[2]{Standard}%
-\footnotetext[3]{Only allowed for \textit{Chaos} or \textit{J. Math. Phys.}}%
-\end{table}
-
+I would like to thank Dr.Ries and Dr.Goslawski as well as everyone else in the accelerator group at HZB for mentoring, teaching, and guiding me through the last couple weeks. It has been an amazing experience to spend the summer here in Berlin and it will always be remembered.
 
 
 \begin{thebibliography}{9}\label{sec:TeXbooks}%
 \bibitem{Note1}
-Source code can be found on the following github page: \url{https://github.com/levondov/TuneResonancePython}.
+Source code can be found on the following github page: 
+\url{https://github.com/levondov/TuneResonancePython}.
 %
 \bibitem{Note2}
 Hamamatsu,
@@ -195,36 +142,17 @@ Hamamatsu,
 (HAMAMATSU PHOTONICS K.K., Hamamatsu City, Japan, 2008)
 \url{http://www.hamamatsu.com/resources/pdf/sys/e_streakh.pdf}.
 %
-\bibitem[Lamport(1996)]{LaTeXman} 
-L. Lamport, 
-\emph{\LaTeX\, a Document Preparation System} 
-(Addison-Wesley, Reading, MA, 1996).
+\bibitem{Note3} 
+More pictures of the optical path setup can be found here:
 %
-\bibitem[Goossens(1994)]{Compan} 
-M. Goosens, F. Mittelbach, and A. Samarin, 
-\emph{The \LaTeX\ Companion} 
-(Addison-Wesley, Reading, MA, 1994).
+\bibitem{Note4} 
+To Find more images of the streak camera measurements, see here: 
 %
 \bibitem[Knuth(1986)]{TeXbook} 
 D. E. Knuth, 
 \emph{The \TeX book} 
 (Addison-Wesley, Reading, MA, 1986). 
-%
-\bibitem[Kopka(1995)]{Guide} 
-H. Kopka and P. Daly, 
-\emph{A Guide to \LaTeXe} 
-(Addison-Wesley, Reading, MA, 1995).
-%
-\bibitem[Goossens(1997)]{CompanG} 
-M. Goossens, S. Rahtz, and F. Mittelbach, 
-\emph{The \LaTeX\ Graphics Companion} 
-(Addison-Wesley, Reading, MA, 1997).
-%
-\bibitem[Rahtz(1999)]{CompanW} 
-S. Rahtz, M. Goossens \emph{et al.},
-\emph{The \LaTeX\ Web Companion} 
-(Addison-Wesley, Reading, MA, 1999).
-%
+
 \end{thebibliography}
 
 \end{document}
