@@ -72,18 +72,18 @@ $\,$ \\ %a hack to create some space
 \headerbox{Introduction}{name=introbox,column=0,row=0,span=3}
 {
 \begin{tikzpicture}
-\node at (1,5)[]{
-\begin{varwidth}{14cm}
+\node at (0,4.5)[]{
+\begin{varwidth}{12cm}
 The \textbf{H}elmholtz-\textbf{Z}entrum \textbf{B}erlin is a facility that operates two synchrotron light sources: BESSY II and the MLS. One of the long term goals of this center is to continually make bunch lengths as short as possible in storage rings. A way to go about this is through lattice design by changing the momentum compaction factor. An important part of lattice design involves picking a good working point to avoid the tune resonances of the machine. A tune resonance program was therefore developed which can be used to view the current working point and resonance lines given only a few input parameters from the EPICS control systems.
 
 \end{varwidth}};
 \node at (0,1){
 \begin{varwidth}{12cm}
-In order to study shortest bunches, diagnostic tools are needed. A new streak camera was recently purchased for the MLS, and was setup at a beamline above the machine on the second floor. The setup proved to be quite a challenged because of the placement of the camera and beamline. An optical path that needed six degrees (x,x',y,y',z,z') of freedom was setup; this setup also provided the opportunity to operate the old streak camera along side the new camera simulatanously and compare measurements.
+In order to study shortest bunches, diagnostic tools are needed. A new streak camera was recently purchased for the MLS, and was setup at a beamline above the machine on the second floor. The setup proved to be quite a challenged because of the placement of the camera and beamline. An optical path that needed six degrees (x,x',y,y',z,z') of freedom was setup; this setup also provided the opportunity to operate the old streak camera along side the new camera simultaneously and compare measurements.
 \end{varwidth}};
 
 \node at (13.0,3) {\includegraphics[width=250pt]{Pics/mls.pdf}};
-\node at (10,0) {\footnotesize
+\node at (9.5,0.5) {\footnotesize
 \begin{tabular}{lc}%\hline
 Lattice & {DBA}\\
 Energy range / \si{\mega\electronvolt} &  105 to 630\\
@@ -133,12 +133,6 @@ The toroidal mirrors, along with a splitter and a plane mirror, on the optical t
 };
 \node at (5.3,-12.3) {\includegraphics[height=170pt]{IP/levon/lowalpha_1uAgraph.pdf}
 };
-\node at (-2,-9.6) {
-\large horizontal bunch length
-};
-\node at (5.3,-9.6) {
-\large single bunch measurement
-};
 \draw[<-,thick] (-4.85,-13) to [out=-90,in=180] (-3,-15.8);
 \draw[<-,thick] (-0.60,-13) to [out=-90,in=0] (0.1,-15.8);
 \node at (-1.5,-15.8) { \large one revolution
@@ -163,6 +157,12 @@ operational principal for the streak camera
 \draw [-,black,thick] (5.95,-8.45) -- (4.75,-11.9);
 \draw [-,black,thick] (5.95,-8.45) -- (5.75,-11.9);
 \draw [black,thick] (4.75,-11.9) rectangle (5.75,-12.9);
+\node at (-2,-9.6) {
+\large multi bunch measurement
+};
+\node at (5.3,-9.6) {
+\large single bunch measurement
+};
 \end{tikzpicture}
 }
 

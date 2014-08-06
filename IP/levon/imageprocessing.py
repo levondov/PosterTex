@@ -55,10 +55,10 @@ plt.savefig('verstreakonly.pdf',dpi=100,transparent=True)
 
 
 fig11 = plt.figure()
-plt.plot(b1,axis1,'k--',linewidth=2)
+plt.plot(b1,axis1,'w--',linewidth=4)
 plt.grid(True)
 plt.axis([0.02,0.4,-105,280])
-plt.xlabel('intensity')
+plt.xlabel('intensity (a.u.)')
 plt.ylabel('time range (ps) ')
 plt.savefig('verstreakonlygraph.pdf',transparent=True)
 
@@ -72,10 +72,10 @@ plt.savefig('lowalpha_1uA.pdf',dpi=200,transparent=True)
 
 fig22 = plt.figure()
 plt.xscale('log')
-plt.plot(sumA2,axis2,'k--',linewidth=2)
+plt.plot(sumA2,axis2,'w--',linewidth=4)
 plt.grid(True)
 plt.axis([30000,100000000,30,120])
-plt.xlabel('intensity')
+plt.xlabel('intensity (a.u.)')
 plt.ylabel('time range (ps) ')
 plt.savefig('lowalpha_1uAgraph.pdf',transparent=True)
 
@@ -88,10 +88,10 @@ plt.axis('off')
 plt.savefig('analog10sx50_backgroundsubstracted.pdf',dpi=100,transparent=True)
 
 fig33 = plt.figure()
-plt.plot(b3,axis3,'k--',linewidth=2)
+plt.plot(b3,axis3,'w--',linewidth=4)
 plt.grid(True)
 plt.axis([0.05,0.4,20,180])
-plt.xlabel('intensity')
+plt.xlabel('intensity (a.u.)')
 plt.ylabel('time range (ps) ')
 plt.savefig('analog10sx50_backgroundsubstractedgraph.pdf',transparent=True)
 
@@ -106,10 +106,10 @@ plt.savefig('lowalpha_100mA_zerisseneFuellungmitLuecke.pdf',dpi=100,transparent=
 
 fig44 = plt.figure()
 plt.xscale('log')
-plt.plot(sumA4,axis4,'k--',linewidth=2)
+plt.plot(sumA4,axis4,'w--',linewidth=4)
 plt.grid(True)
 plt.axis([30000,100000000,100,315])
-plt.xlabel('intensity')
+plt.xlabel('intensity (a.u.)')
 plt.ylabel('time range (ps) ')
 plt.savefig('lowalpha_100mA_zerisseneFuellungmitLueckegraph.pdf',transparent=True)
 

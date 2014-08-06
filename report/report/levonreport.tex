@@ -50,7 +50,7 @@ The program is based on the principal of optical resonances. The main equation t
 \begin{equation}
  m*Q_x + n*Q_y = p
 \end{equation}
-Where m,n, and p are integer values. The sum of $ |m| + |n| $ is called the order of the resonances. For stable operation $Q_x$ and $Q_y$ must be chosen to be far away from any optical resonances. This program provides a visual guide to help with this through a usual GUI.
+Where m,n, and p are integer values. The sum of $ |m| + |n| $ is called the order of the resonances. For stable operation $Q_x$ and $Q_y$ must be chosen to be far away from any optical resonances. This program helps solve this problem by providing a visual guide and a simple GUI to aid the operator in picking an adequate working point for the machine.
 \subsection{Developement}
 The program is written in Python and completely open source. This provided the opportunity to integrate with EPICS (Experimental Physics and Industrial Control System) through a special python package called PyEpics and build a GUI system using wxPython to make the program simple to use. Much of the program also relies heavily on numpy and matplotlib packages available for Python.
 
@@ -59,10 +59,12 @@ The biggest feature of the program is a 'live mode' option that is able to give 
 \subsection{Customizability}
 Various customizability options are available for the program. Changing color settings, removing certain resonance lines, and adjusting for mirrored tunes are just some features available for the user. Being able to display phase advance resonance lines is another unique feature included in the program.
 
-Aside from accelerators having to position their working points away from resonane lines, they must also consider the phase advanced resonance lines as these are much more powerful and dangerous to approach with a working point. Given the number of unit cells for the machine, the program is able to display a tune diagram with the phase advance resonance lines along with the working points. This feature can complement the live mode option available with the program. If an operator wants to move the working point and cross resonance lines, the program can be used as a visual guide in order to avoid the phase advanced resonance lines (colored in red in figure 1) which will more than likely kill the beam.
-\begin{figure}
+Aside from accelerators having to position their working points away from resonane lines, they must also consider the phase advanced resonance lines as these are much more powerful and dangerous to approach with a working point. Given the number of unit cells for the machine, the program is able to display a tune diagram with the phase advance resonance lines along with the working points. This feature can complement the live mode option available with the program. If an operator wants to move the working point and cross resonance lines, the program can be used as a visual guide in order to avoid the phase advanced resonance lines (colored in red in figure~\ref{fig1}) which will more than likely kill the beam.
+\begin{figure}[htb]
 \begin{center}
 \includegraphics[width=200pt]{image.pdf}
+\caption{BLABLALBALLABLBA}
+\label{fig1}
 \end{center}
 \end{figure}
 Figure 2: Tune resonance diagram displaying phase advance lines (4 unit cells) for the MLS
