@@ -3,6 +3,7 @@ import Image
 import numpy as np
 import scipy.stats as ss
 from scipy import optimize
+from scipy.stats import norm
 import matplotlib.mlab as mlab
 import matplotlib.pyplot as plt
 
@@ -20,6 +21,7 @@ sumA1 = np.sum(A1,axis=1)
 A2 = np.delete(A2,0,axis=0)
 axis2 = np.fliplr([A2[:,0]])
 axis2 = axis2[0,:]
+data = A2
 A2 = np.delete(A2,0,axis=1)
 sumA2 = np.sum(A2,axis=1)
 
@@ -78,6 +80,11 @@ plt.axis([30000,100000000,30,120])
 plt.xlabel('intensity (a.u.)')
 plt.ylabel('time range (ps) ')
 plt.savefig('lowalpha_1uAgraph.pdf',transparent=True)
+print(np.shape(sumA2),np.shape(axis2))
+mu, stn = norm.fit(np.array([sumA2,axis2]))
+print(mu,stn)
+data = norm.rvs(10.0, 2.5, size=100)
+print(data)
 
 a3 = np.linalg.norm(sumA3)
 b3 = sumA3/a3

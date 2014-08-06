@@ -52,7 +52,7 @@ Diagnostic tools are needed in order to investigate shortest bunches in storage 
 
 \section{Tune Resonance Program\cite{Note1}}
 
-The program is based on the principal of optical resonances. Different magnets have different order magnetic fields and can effect the betatron oscillations in the horizontal and vertical planes. For example, a quadrupole magnetic field can produce a second order betatron oscillation resonance. 
+The program is based on the principal of optical resonances. Different magnets have different order magnetic fields that can effect the betatron oscillations in the horizontal and vertical planes. For example in table I, a quadrupole magnetic field can produce a second order betatron oscillation resonance. 
 \begin{table}[h]
 \centering
 \begin{tabular}{l|r}
@@ -77,12 +77,12 @@ Where $m$,$n$, and $p$ are integer values. $Q_x$ and $Q_y$ are the horizontal an
 \subsection{Developement}
 The program is written in Python and completely open source. This provided the opportunity to integrate with EPICS (Experimental Physics and Industrial Control System) through a special python package called PyEpics and build a GUI system using wxPython to make the program simple to use. Much of the program also relies heavily on numpy and matplotlib packages available for Python.
 
-The biggest feature of the program is a 'live mode' option that is able to give the current tune position numerically and graphically. Using the proper epics channels, the program is able to grab the four values it needs to calculate the non integer tune: the RF cavity frequency $f_{rf}$, the harmonic number $h$, and the horizontal and vertical betatron oscillation frequencies $f_x,f_y$. The program can check and update the tune several times a second, but in order to have the visual display updated, a threading process was used to avoid having the GUI freeze up while in live mode. The threading process is able to do all the processing and updating of the matplotlib graph, continously updating the working point on the plot.
+The biggest feature of the program is a 'live mode' option that is able to give the current tune position numerically and graphically. Using the proper epics channels, the program is able to grab the four values it needs to calculate the non integer tune: the RF cavity frequency $f_{rf}$, the harmonic number $h$, and the horizontal and vertical betatron oscillation frequencies $f_x,f_y$. The program can check and update the tune several times a second, but in order to have the visual display updated, a threading process was used to avoid having the GUI freeze up while in live mode. The threading process is able to do all the processing and updating of the matplotlib graph in a separate process, continously updating the working point on the plot while not interfering with the GUI running.
 
 \subsection{Customizability}
 Various customizability options are available for the program. Changing color settings, removing certain resonance lines, and adjusting for mirrored tunes are just some features available for the user. Being able to display phase advance resonance lines is another unique feature included in the program.
 
-Aside from accelerators having to position their working points away from resonane lines, they must also consider the phase advanced resonance lines as these are much more powerful and dangerous to approach with a working point. Given the number of unit cells for the machine, the program is able to display a tune diagram with the phase advance resonance lines along with the working points. This feature can complement the live mode option available with the program. If an operator wants to move the working point and cross resonance lines, the program can be used as a visual guide in order to avoid the phase advanced resonance lines (colored in red in figure~\ref{fig1}) which will more than likely kill the beam.
+Aside from accelerators having to position their working points away from resonane lines, they must also consider the phase advanced resonance lines as these are much more powerful and dangerous to approach with a working point. Given the number of unit cells for the machine, the program is able to display a tune diagram with the phase advance resonance lines along with the working points. This feature can complement the live mode option available with the program. If an accelerator operator wants to move the working point and cross resonance lines, the program can be used as a visual guide in order to avoid the phase advanced resonance lines (colored in red in figure~\ref{fig1}) which will more than likely kill the beam.
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[width=200pt]{image.pdf}
@@ -129,7 +129,7 @@ Looking at the coherence condition for undulator radiation,
 \begin{equation}
 \lambda_w = \frac{\lambda_u}{2\gamma^2} (1 + \frac{K^2}{2} + \gamma^2\Theta_0^2)
 \end{equation}
-there are a few variables that can be changed in order to shift the wavelengths of the radiation. Changing the undulator period $\lambda_u$ or the laboratory frame angle $\Theta_0$ is not really an option. This leaves the beam energy $\gamma$ and the undulator parameter $K$. For our purposes the undulator parameter was the easiest to manipulate.
+there are a few variables that can be changed in order to shift the wavelengths of the radiation. Changing the undulator period $\lambda_u$ or the laboratory frame angle $\Theta_0$ is not really an option for an already built undulator. This leaves the beam energy $\gamma$ and the undulator parameter $K$. For our purposes the undulator parameter was the easiest to manipulate.
 \begin{equation}
 K = \frac{e B \lambda_u}{2\pi m_e c}
 \end{equation}
