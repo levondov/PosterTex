@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.16)  6 AUG 2014 16:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.9)  28 AUG 2014 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,17 +791,13 @@ Package pdftex.def Info: horizontaltable.pdf used on input line 141.
 
 pdfTeX warning: pdflatex (file ./diagramtext.pdf): PDF inclusion: multiple pdfs
  with page group included in a single page
-> <./horizontaltable.pdf
-
-pdfTeX warning: pdflatex (file ./horizontaltable.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->] <lowalpha_1uA.pdf, id=989, 578.16pt x 433.62pt>
+> <./horizontaltable.pdf>] <lowalpha_1uA.pdf, id=987, 578.16pt x 433.62pt>
 File: lowalpha_1uA.pdf Graphic file (type pdf)
- <use lowalpha_1uA.pdf>
+
+<use lowalpha_1uA.pdf>
 Package pdftex.def Info: lowalpha_1uA.pdf used on input line 156.
 (pdftex.def)             Requested size: 250.0pt x 187.49837pt.
-
-<lowalpha_1uAgraph.pdf, id=990, 578.16pt x 433.62pt>
+ <lowalpha_1uAgraph.pdf, id=988, 578.16pt x 433.62pt>
 File: lowalpha_1uAgraph.pdf Graphic file (type pdf)
 
 <use lowalpha_1uAgraph.pdf>
@@ -929,7 +925,7 @@ Package rerunfilecheck Info: File `levonreport.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  16850 strings out of 493304
- 286522 string characters out of 6139871
+ 286522 string characters out of 6139872
  390916 words of memory out of 5000000
  19957 multiletter control sequences out of 15000+600000
  18774 words of font info for 69 fonts, out of 8000000 for 9000
@@ -952,10 +948,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on levonreport.pdf (4 pages, 16391116 bytes).
+Output written on levonreport.pdf (4 pages, 3987859 bytes).
 PDF statistics:
- 1111 PDF objects out of 1200 (max. 8388607)
- 345 compressed objects within 4 object streams
+ 1109 PDF objects out of 1200 (max. 8388607)
+ 343 compressed objects within 4 object streams
  33 named destinations out of 1000 (max. 500000)
  144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

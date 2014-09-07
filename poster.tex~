@@ -79,7 +79,7 @@ The \textbf{H}elmholtz-\textbf{Z}entrum \textbf{B}erlin is a facility that opera
 \end{varwidth}};
 \node at (0,1){
 \begin{varwidth}{12cm}
-In order to study shortest bunches, diagnostic tools are needed. A new streak camera was recently purchased for the MLS, and was setup at a beamline above the machine on the second floor. The setup proved to be quite a challenged because of the placement of the camera and beamline. An optical path that needed six degrees (x,x',y,y',z,z') of freedom was setup; this setup also provided the opportunity to operate the old streak camera along side the new camera simulatanously and compare measurements.
+In order to study shortest bunches, diagnostic tools are needed. A new streak camera was recently purchased for the MLS, and was setup at a beamline above the machine on the second floor. The setup proved to be quite a challenged because of the placement of the camera and beamline. An optical path that needed six degrees (x,x',y,y',z,z') of freedom was setup; this setup also provided the opportunity to operate the old streak camera along side the new camera simultaneously and compare measurements.
 \end{varwidth}};
 
 \node at (13.0,3) {\includegraphics[width=250pt]{Pics/mls.pdf}};
